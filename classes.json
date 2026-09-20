@@ -24867,5 +24867,231 @@
                 }
             ]
         }
+    },
+    "Abyssal Angel's Shadow": {
+        "uid": 5789,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Recommended enhancement: Spellbreaker. Trained by Revontheus to wield Crystal Weaponry, they excel at fighting multiple enemies. Abyssal Angels have various ways of taking their opponents down.",
+        "sClassCat": "C3",
+        "aMRM": [
+            "Abyssal Angels gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Dodge any attack (restores HP as well)"
+        ],
+        "sClassName": "Abyssal Angel's Shadow",
+        "auras": [
+            {
+                "nam": "Engraved Arrows",
+                "e": [
+                    {
+                        "val": 0.12,
+                        "id": 823,
+                        "sta": "cdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Strategist Ace",
+                "e": [
+                    {
+                        "val": 0.18,
+                        "id": 824,
+                        "sta": "tdo",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 1.18,
+                        "id": 825,
+                        "sta": "WIS",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Guess They Never Miss Huh",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 826,
+                        "sta": "thi",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.15,
+                        "id": 827,
+                        "sta": "scm",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:5789",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1537,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Engraved Arrows",
+                    "desc": "Increases DoT Damage by 12%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1538,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Strategist Ace",
+                    "desc": "Increases Wisdom and Dodge by 18%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1539,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Shadow Sight",
+                    "desc": "Increases Hit Chance by 10% and Critical Strike Damage by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "tgtMin": 1,
+                    "icon": "i,i,i,i,i,abysaa",
+                    "mp": 0,
+                    "anim": "RangedAttack2",
+                    "nam": "Vice Bolt",
+                    "tgtMax": 3,
+                    "desc": "Fires long range bolts infused with void energy dealing Moderate Damage enhanced by your Spell Power. Can hit up to three targets. Each bolt exposes their deepest sins dealing a Minor DoT for 3 seconds. Stacks to 6.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 3000,
+                    "fx": "m",
+                    "damage": 0.75,
+                    "dsrc": "SP2",
+                    "id": 1532,
+                    "ref": "aa",
+                    "toggleAoe": "Vantage Point",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "i,i,i,i,i,abys1",
+                    "nam": "Shadowed Flight",
+                    "anim": "Cast2",
+                    "mp": 15,
+                    "tgtMax": 3,
+                    "desc": "Spread your wings and take flight! Applies Vantage Point, increasing Hit Chance and Dodge by 15% for 6 seconds and stunning your opponent for 2 seconds. Also allows you to focus all your fire on one target, increasing your DoT Damage by 75%. Your focused targeting reduces the amount of void energy you need to expend, applying Mana Refraction which reduces mana costs by 50% for 8 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "p",
+                    "id": 1533,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_abys1",
+                    "cd": 8000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "i,i,i,i,i,abys2",
+                    "mp": 26,
+                    "anim": "Cast1",
+                    "nam": "Abyssal Alacrity",
+                    "tgtMax": 4,
+                    "desc": "Send out shadow images, striking up to 4 opponents and siphoning their Haste to you with Catalyst- reducing theirs by 20% and increasing yours by 50% for 8 seconds.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 1.7,
+                    "dsrc": "APSP1",
+                    "id": 1534,
+                    "ref": "a2",
+                    "toggleAoe": "Vantage Point",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_abys2",
+                    "cd": 4000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "i,i,i,i,i,abys3",
+                    "nam": "Umbral Judgment",
+                    "anim": "Cast3",
+                    "mp": 18,
+                    "tgtMax": 1,
+                    "desc": "Tap into your inner void energy to temporarily put you in a stasis, granting you a potent Heal over Time and quadrupling your Endurance for 10 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "id": 1535,
+                    "ref": "a3",
+                    "tgt": "s",
+                    "typ": "m",
+                    "strl": "sp_hl1a",
+                    "cd": 20000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "i,i,i,i,i,abys4",
+                    "nam": "Imprismed Shroud",
+                    "anim": "Castgood",
+                    "mp": 32,
+                    "tgtMax": 1,
+                    "desc": "Spawns Crystals from thin air to increase 25% Damage Resistance for 8 seconds. Also applies Clean Cut, increasing your Crit Chance by 15% for 6 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "p",
+                    "id": 1536,
+                    "ref": "a4",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "strl": "sp_abys4",
+                    "cd": 13000
+                }
+            ]
+        }
     }
 }
