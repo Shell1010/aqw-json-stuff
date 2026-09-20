@@ -3798,7 +3798,7 @@
         }
     },
     "Classic Pirate": {
-        "uid": 23410,
+        "uid": 6696,
         "iCP": 27993,
         "cmd": "sAct",
         "sDesc": "Rogues are quick-moving, deadly fighters. They prey on any weakness in their opponent, while using poisons and evasive footwork to their advantage.",
@@ -3839,7 +3839,7 @@
                 ]
             }
         ],
-        "tInf": "p:23410",
+        "tInf": "p:6696",
         "actions": {
             "passive": [
                 {
@@ -3969,21 +3969,6 @@
                     "tgt": "h",
                     "typ": "p",
                     "cd": 4000
-                },
-                {
-                    "ref": "i1",
-                    "icon": "icu1",
-                    "mp": 0,
-                    "anim": "Cheer",
-                    "nam": "Potions",
-                    "desc": "Equip a potion or scroll from your inventory to use it here.",
-                    "range": 808,
-                    "isOK": true,
-                    "fx": "",
-                    "tgt": "f",
-                    "typ": "i",
-                    "strl": "",
-                    "cd": 60000
                 }
             ]
         }
@@ -9494,8 +9479,8 @@
         }
     },
     "Ninja": {
-        "uid": 23410,
-        "iCP": 30365,
+        "uid": 7166,
+        "iCP": 27096,
         "cmd": "sAct",
         "sDesc": "Ninjas operate in silence secrecy. They are capable fighters, but prefer to attack quickly and decisively, eliminating the threat of resistance.",
         "sClassCat": "M2",
@@ -9534,9 +9519,38 @@
                         "typ": "+"
                     }
                 ]
+            },
+            {
+                "nam": "Legendary",
+                "e": [
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "STR",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "INT",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "END",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "LUK",
+                        "typ": "*"
+                    }
+                ]
             }
         ],
-        "tInf": "p:23410",
+        "tInf": "p:7166",
         "actions": {
             "passive": [
                 {
@@ -9625,7 +9639,6 @@
                     "isOK": true,
                     "range": 301,
                     "auras": [
-                        {},
                         {}
                     ],
                     "fx": "m",
@@ -9647,8 +9660,6 @@
                     "desc": "Throw a Smoke Bomb at your target, reducing their Hit Chance by 15%.\r\n\r\nIf Vanish is active, your Smoke Bomb catches your target off guard, reducing their Hit Chance by an additional 35%, but consumes Vanish. Both effects last 6 seconds.\r\n",
                     "isOK": true,
                     "auras": [
-                        {},
-                        {},
                         {}
                     ],
                     "range": 808,
@@ -9670,7 +9681,6 @@
                     "mp": -20,
                     "desc": "Vanish into the shadows, increasing your Haste and Dodge by 100% while restoring 20 mana. Also applies Concealed Blade, causing your attacks to deal bonus damage to targets below 25% of their max HP, with the bonus damage increasing the closer they are to death. Both effects last 5 seconds.",
                     "auras": [
-                        {},
                         {}
                     ],
                     "isOK": true,
@@ -9679,21 +9689,6 @@
                     "tgt": "s",
                     "typ": "p",
                     "cd": 15000
-                },
-                {
-                    "ref": "i1",
-                    "icon": "icu1",
-                    "mp": 0,
-                    "anim": "Cheer",
-                    "nam": "Potions",
-                    "desc": "Equip a potion or scroll from your inventory to use it here.",
-                    "range": 808,
-                    "isOK": true,
-                    "fx": "",
-                    "tgt": "f",
-                    "typ": "i",
-                    "strl": "",
-                    "cd": 60000
                 }
             ]
         }
@@ -12436,8 +12431,8 @@
         }
     },
     "Chrono Commandant": {
-        "uid": 23410,
-        "iCP": 1,
+        "uid": 1845,
+        "iCP": 302500,
         "cmd": "sAct",
         "sDesc": "ChronoCommanders alter the flow of time to tremendous effect in battle.",
         "sClassCat": "M1",
@@ -12447,8 +12442,31 @@
             " * Are struck by an enemy in combat"
         ],
         "sClassName": "Chrono Commandant",
-        "auras": [],
-        "tInf": "p:23410",
+        "auras": [
+            {
+                "nam": "Auxiliary Systems",
+                "e": [
+                    {
+                        "val": 2.5,
+                        "id": 1117,
+                        "sta": "END",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Temporal Power Suit",
+                "e": [
+                    {
+                        "val": -0.1,
+                        "id": 1118,
+                        "sta": "cpi",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:1845",
         "actions": {
             "passive": [
                 {
@@ -12461,7 +12479,7 @@
                         {}
                     ],
                     "range": 301,
-                    "isOK": false,
+                    "isOK": true,
                     "fx": "m",
                     "tgt": "s",
                     "typ": "passive",
@@ -12477,7 +12495,7 @@
                         {}
                     ],
                     "range": 301,
-                    "isOK": false,
+                    "isOK": true,
                     "fx": "m",
                     "tgt": "s",
                     "typ": "passive",
@@ -12529,9 +12547,9 @@
                     "mp": 15,
                     "anim": "Castgood",
                     "auraCheck": "Temporal Rift",
-                    "desc": "Rollback time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Continuum, reducing aken by 55% for 22 seconds. Always crits.",
+                    "desc": "Rollback time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Continuum, reducing all damage taken by 55% for 22 seconds. Always crits.",
                     "forceResult": "crit",
-                    "isOK": false,
+                    "isOK": true,
                     "range": 3000,
                     "auras": [
                         {}
@@ -12554,7 +12572,7 @@
                     "anim": "Thrash",
                     "mp": 22,
                     "desc": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks.",
-                    "isOK": false,
+                    "isOK": true,
                     "range": 301,
                     "fx": "m",
                     "damage": 1.3,
@@ -12572,30 +12590,14 @@
                     "mp": 10,
                     "desc": "Sever time for your target, placing a DoT effect on them that doubles in strength each time it ticks while reducing their outgoing damage by 25% for 10 seconds. Also applies Focus for 4 seconds, which forces your target to attack only you for the duration.",
                     "auras": [
-                        {},
                         {}
                     ],
-                    "isOK": false,
+                    "isOK": true,
                     "range": 301,
                     "fx": "m",
                     "tgt": "h",
                     "typ": "p",
                     "cd": 16000
-                },
-                {
-                    "ref": "i1",
-                    "icon": "icu1",
-                    "mp": 0,
-                    "anim": "Cheer",
-                    "nam": "Potions",
-                    "desc": "Equip a potion or scroll from your inventory to use it here.",
-                    "range": 808,
-                    "isOK": true,
-                    "fx": "",
-                    "tgt": "f",
-                    "typ": "i",
-                    "strl": "",
-                    "cd": 60000
                 }
             ]
         }
@@ -25090,6 +25092,5055 @@
                     "typ": "pm",
                     "strl": "sp_abys4",
                     "cd": 13000
+                }
+            ]
+        }
+    },
+    "Healer": {
+        "uid": 7166,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Healers are passionately devoted to improving the condition of the world around them. They are perhaps the most valuable allies, able to mend wounds and turn the tide of battle.",
+        "sClassCat": "C2",
+        "aMRM": [
+            "Healers regain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Healer",
+        "auras": [
+            {
+                "nam": "Pure Hearted",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 77,
+                        "sta": "cho",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.1,
+                        "id": 19,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Resolute",
+                "e": [
+                    {
+                        "val": -0.1,
+                        "id": 429,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Legendary",
+                "e": [
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "STR",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "INT",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "END",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.1,
+                        "id": 69,
+                        "sta": "LUK",
+                        "typ": "*"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:7166",
+        "actions": {
+            "passive": [
+                {
+                    "id": 107,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Pure Hearted",
+                    "desc": "Hit Chance and Heal Power increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 72,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Resolute",
+                    "desc": "Damage Resistance increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 16,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imh3",
+                    "mp": 15,
+                    "anim": "Attack3",
+                    "nam": "Heartbeat",
+                    "tgtMax": 1,
+                    "desc": "Deals damage based on your current health (15% of current HP plus moderate magical damage to the target).",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 0.15,
+                    "dsrc": "intHPSP",
+                    "id": 104,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_eh1",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imf1,ieh1",
+                    "nam": "Healing Word",
+                    "mp": 20,
+                    "anim": "Castgood",
+                    "tgtMax": 7,
+                    "desc": "Heals yourself or a friendly target for a large amount and up to 6 additional nearby targets for a smaller amount. Applies Radiance to the first target, healing them over time for 16 seconds.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -6,
+                    "from": "tgt",
+                    "dsrc": "AoE1",
+                    "ct": 2000,
+                    "id": 103,
+                    "ref": "a2",
+                    "tgt": "f",
+                    "typ": "m",
+                    "strl": "sp_eh1",
+                    "cd": 8000
+                },
+                {
+                    "id": 105,
+                    "icon": "isi1",
+                    "ref": "a3",
+                    "nam": "Energy Flow",
+                    "anim": "Castgood",
+                    "mp": 5,
+                    "desc": "Applies Energy Flow to your target, granting you mana each time they take damage for 12 seconds. Also applies Inhibition, reducing your target's outgoing damage by 30% for 8 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_eh1",
+                    "cd": 12000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iel2",
+                    "mp": 20,
+                    "anim": "Castgood",
+                    "nam": "Holy",
+                    "tgtMax": 1,
+                    "desc": "A light based magical spell. Deals bonus damage to Undead.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 3.5,
+                    "dsrc": "EX1",
+                    "funcRace": "Undead",
+                    "id": 106,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_hl1a2",
+                    "cd": 8000
+                }
+            ]
+        }
+    },
+    "Antique Hunter": {
+        "uid": 2190,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Artifact hunters explore lore selectively looking for rare and powerful artifacts to aid them in their battles and adventures.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Artifact Hunters gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Antique Hunter",
+        "auras": [
+            {
+                "nam": "Cursed Ring of Dragon Control",
+                "e": [
+                    {
+                        "val": 1.2,
+                        "id": 149,
+                        "sta": "STR",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.2,
+                        "id": 160,
+                        "sta": "INT",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Resourceful",
+                "e": [
+                    {
+                        "val": 0.05,
+                        "id": 205,
+                        "sta": "tdo",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.05,
+                        "id": 212,
+                        "sta": "thi",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.05,
+                        "id": 3,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Under Pressure",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 398,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:2190",
+        "actions": {
+            "passive": [
+                {
+                    "id": 787,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Cursed Ring of Dragon Control",
+                    "desc": "STR and INT increased by 20%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 788,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Resourceful",
+                    "desc": "Dodge, Crit and Hit chance all increased by 5%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 789,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Under Pressure",
+                    "desc": "Haste increased by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 9,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iwsword2",
+                    "mp": 15,
+                    "anim": "Attack3",
+                    "nam": "Strike of Awe",
+                    "tgtMax": 1,
+                    "desc": "You strike using power amassed from the Blade of Awe. You have a 25% chance to leave your opponent awestruck which stuns them for 2 seconds.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 1.75,
+                    "dsrc": "AP2",
+                    "id": 783,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 3000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iwwand",
+                    "mp": 15,
+                    "anim": "Cast2",
+                    "nam": "Supreme Arcane Spell",
+                    "tgtMax": 1,
+                    "desc": "Using the power of the supreme Arcane staff you deal damage and applies the Supreme Arcane Burn DoT to your Opponent.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 2.5,
+                    "dsrc": "SP1",
+                    "id": 784,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "cd": 8000
+                },
+                {
+                    "icon": "iwshield",
+                    "nam": "Shiny Mirror Shield",
+                    "anim": "Cast3",
+                    "mp": 30,
+                    "desc": "Using the power of the shiny mirror you deflect a portion of your opponent's attack back at them and improve your resistance by 80% 6 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "m",
+                    "dsrc": "AP2",
+                    "id": 785,
+                    "ref": "a3",
+                    "tgt": "s",
+                    "typ": "m",
+                    "strl": "sp_ef4",
+                    "cd": 15000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iwarmor",
+                    "mp": 30,
+                    "anim": "Cast1",
+                    "nam": "Destiny or Doom",
+                    "tgtMax": 1,
+                    "desc": "You've come across many blessed and cursed items over the years and learned how to channel their energies to work in your favor. You either trigger DOOM which increases your Damage output by 40%, Strength by 30% and Crit chance by 15% DESTINY, which gives you a large HoT Heal Over Time, increases your Intellect by 30% and Haste by 15%.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "fx": "m",
+                    "randomLength": 1,
+                    "id": 786,
+                    "ref": "a4",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "randomAura": true,
+                    "cd": 10000
+                }
+            ]
+        }
+    },
+    "Blood Ancient": {
+        "uid": 10040,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "You drank of the distilled essence of several great vampire warriors, and now their STRENGTH is yours to use. ",
+        "sClassCat": "M2",
+        "aMRM": [
+            "The Blood Ancient gains mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Dodge any attack (restores HP as well)"
+        ],
+        "sClassName": "Blood Ancient",
+        "auras": [
+            {
+                "nam": "Enhanced Senses",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 893,
+                        "sta": "tcr",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.1,
+                        "id": 872,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Superhuman Reflexes",
+                "e": [
+                    {
+                        "val": 1.1,
+                        "id": 173,
+                        "sta": "DEX",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Wonderful Night",
+                "e": [
+                    {
+                        "val": 0.5,
+                        "id": 265,
+                        "sta": "scm",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:10040",
+        "actions": {
+            "passive": [
+                {
+                    "tgtMin": 1,
+                    "id": 1996,
+                    "icon": "isp2",
+                    "ref": "p1",
+                    "nam": "Enhanced Senses",
+                    "desc": "Crit Chance and Dodge increased by 10%.",
+                    "tgtMax": 1,
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "tgtMin": 1,
+                    "id": 1997,
+                    "icon": "isp2",
+                    "ref": "p2",
+                    "nam": "Superhuman Reflexes",
+                    "desc": "Dexterity increased by 10%.",
+                    "tgtMax": 1,
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "tgtMin": 1,
+                    "id": 1998,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Wonderful Night",
+                    "desc": "Crit Damage increased by 50%.",
+                    "tgtMax": 1,
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "tgtMin": 1,
+                    "icon": "ipn1",
+                    "mp": 0,
+                    "anim": "FistweaponAttack1",
+                    "nam": "Seeing Red",
+                    "tgtMax": 1,
+                    "desc": "Gouge your target with your claws. Deals increased damage the lower your HP is.",
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "damage": 0.4,
+                    "dsrc": "HPd",
+                    "id": 1993,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "cd": 2500
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "isb1",
+                    "mp": 0,
+                    "anim": "Thrash",
+                    "nam": "Bloodshed",
+                    "tgtMax": 1,
+                    "desc": "Your hunt for blood is insatiable. Deals damage and applies Bloodlust, increasing your Crit Damage by 20% for 10 seconds, stacks to 5. Costs 20% of your max HP.",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "BT3",
+                    "id": 1994,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "DmgFct": 2,
+                    "strl": "sp_vamplordaa",
+                    "cd": 4000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iiw1",
+                    "mp": 0,
+                    "anim": "Dodge",
+                    "nam": "Afterimage",
+                    "tgtMax": 1,
+                    "desc": "Your enhanced speed makes you a blur to those around you. Applies Afterimage, increasing your Dodge by 15% for 8 seconds, stacks to 3. Costs 20% of your max HP.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 0,
+                    "dsrc": "BT3",
+                    "id": 1973,
+                    "ref": "a2",
+                    "tgt": "s",
+                    "typ": "ma",
+                    "DmgFct": 2,
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "isf1",
+                    "nam": "Ischemia",
+                    "anim": "Cast3",
+                    "mp": 10,
+                    "tgtMax": 1,
+                    "desc": "Tap into your vampiric strength, temporarily empowering yourself. Applies Blood Boon, increasing your Crit Chance and Haste by 30% for 12 seconds. While empowered, all non lifesteal healing you receive is negated.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "id": 1995,
+                    "ref": "a3",
+                    "tgt": "s",
+                    "typ": "p",
+                    "strl": "sp_ssorc4",
+                    "cd": 12000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplorda1",
+                    "nam": "Exsanguination",
+                    "mp": 15,
+                    "anim": "Stab",
+                    "tgtMax": 1,
+                    "desc": "Bite into your target, inflicting a devastating wound. Deals increased damage the lower your HP is and heals you for a portion of the damage dealt. Feasting on your target temporarily exposes you, reducing your Dodge by 100%. Also applies Blood Loss, reducing your target's Haste by 30% while inflicting a DoT that increases the lower your HP is. While your target suffers from Blood Loss, all non lifesteal healing they receive is negated. All effects last 1 second. Can't miss.",
+                    "forceResult": "noMiss",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.4,
+                    "dsrc": "BT1",
+                    "id": 1982,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "DmgFct": 2,
+                    "strl": "sp_ssorc1",
+                    "cd": 5000
+                }
+            ]
+        }
+    },
+    "Chrono Chaorruptor": {
+        "uid": 4558,
+        "iCP": 1,
+        "cmd": "sAct",
+        "sDesc": "Chronocorruptors corrupt the flow of time to tremendous and random effect in battle.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "ChronoCorruptors gain mana when they:\r",
+            " * Strike an enemy in combat (more effective on crits)\r",
+            " * Are struck by an enemy in combat"
+        ],
+        "sClassName": "Chrono Chaorruptor",
+        "auras": [
+            {
+                "nam": "Chaotic Movement",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 1126,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Embrace Chaos",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 1127,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:18551",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1806,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Chaotic Movement",
+                    "desc": "Dodge chance increased by 15%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": false,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1807,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Embrace Chaos",
+                    "desc": "Damage Increased by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": false,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 1801,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "icon": "isi1,iwsword2",
+                    "nam": "Chaos Rift Strike",
+                    "anim": "Attack4",
+                    "mp": 4,
+                    "desc": "Deals damage to the target and applies Chaos Rift to you. Stacks to 4 and lasts 30 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.6,
+                    "dsrc": "APSP2",
+                    "id": 1802,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "cd": 2000
+                },
+                {
+                    "id": 1803,
+                    "icon": "imf2,ief2",
+                    "ref": "a2",
+                    "nam": "Split Causality",
+                    "anim": "Castgood",
+                    "mp": 10,
+                    "desc": "Chaos manipulates the flow of time for both you and your target. Applies a small or large HoT to yourself, and a small or large DoT to your target. The small effects last 8 seconds and the large effects last 2 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": false,
+                    "range": 808,
+                    "fx": "w",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "cd": 12000
+                },
+                {
+                    "icon": "ims5",
+                    "mp": 20,
+                    "nam": "Time Collapse",
+                    "anim": "Cast3",
+                    "desc": "If Chaos Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Chaos Rift and consumes those stacks.",
+                    "isOK": false,
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "Chrono2",
+                    "id": 1804,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_ee2",
+                    "cd": 6000
+                },
+                {
+                    "icon": "ica1",
+                    "nam": "Don't Blink Twice",
+                    "mp": 15,
+                    "anim": "Attack4",
+                    "desc": "Deals a large amount of damage to your target and applies Distorted Time to yourself, increasing your Haste by 20% for 15 seconds. Chaos empowers you, either applying Visceral Shift, which increases your outgoing physical damage by 75%, or Shiftburn, which increases your HoT and DoT power by 75%. Both effects last 8 seconds.",
+                    "isOK": false,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 2.5,
+                    "dsrc": "AP2",
+                    "randomLength": 1,
+                    "id": 1805,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "Apply": 2,
+                    "strl": "sp_ee1",
+                    "randomAura": true,
+                    "cd": 16000
+                }
+            ]
+        }
+    },
+    "Chronomancer Prime": {
+        "uid": 4558,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Chronomancers alter the flow of time to tremendous effect in battle.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Chronomancers gain mana when they:\r",
+            " * Strike an enemy in combat (more effective on crits)\r",
+            " * Are struck by an enemy in combat"
+        ],
+        "sClassName": "Chronomancer Prime",
+        "auras": [
+            {
+                "nam": "Fall Back",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 1090,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Spring Forward",
+                "e": [
+                    {
+                        "val": 0.05,
+                        "id": 1091,
+                        "sta": "tcr",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.05,
+                        "id": 1092,
+                        "sta": "thi",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.05,
+                        "id": 1093,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:4558",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1777,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Fall Back",
+                    "desc": "Dodge chance increased by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1778,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Spring Forward",
+                    "desc": "Critical strike chance, Hit chance, and Haste increased by 5%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 1772,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "icon": "imr1,iwsword2",
+                    "nam": "Temporal Strike",
+                    "anim": "Attack4",
+                    "mp": 3,
+                    "desc": "Deals damage to the target and applies Temporal Rift to you. Stacks to 4, lasts 30 seconds, and is used by your other abilities.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.6,
+                    "dsrc": "APSP2",
+                    "id": 1773,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "cd": 1500
+                },
+                {
+                    "icon": "iee2,ims1",
+                    "nam": "Rift Inversion",
+                    "mp": 10,
+                    "anim": "Castgood",
+                    "auraCheck": "Temporal Rift",
+                    "desc": "Roll back time to heal yourself. If Temporal Rift is active, the amount healed is increased for each stack. Also applies Time Warp, increasing your Haste by 15% for 16 seconds. Always crits.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -0.7,
+                    "dsrc": "Spell1",
+                    "id": 1774,
+                    "ref": "a2",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "strl": "sp_eh1",
+                    "cd": 12000
+                },
+                {
+                    "icon": "imr2,ims4",
+                    "mp": 20,
+                    "nam": "Rift Collapse",
+                    "anim": "Thrash",
+                    "desc": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks. Has an 80% increased chance to crit.",
+                    "isOK": true,
+                    "range": 808,
+                    "addCrit": 0.8,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "Chrono2",
+                    "id": 1775,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "cd": 12000
+                },
+                {
+                    "id": 1776,
+                    "icon": "ief1",
+                    "ref": "a4",
+                    "nam": "Riftburn",
+                    "anim": "Attack4",
+                    "mp": 15,
+                    "desc": "Bend time for your target, placing a DoT effect on them that doubles in strength each time it ticks. Also reduces their chance to Dodge by 15%, lasts 10 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ee1",
+                    "cd": 12000
+                }
+            ]
+        }
+    },
+    "Classic DoomKnight": {
+        "uid": 10040,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Doom Knights are malevolent, dark warriors. They are violent, quite durable, and prefer to work alone.",
+        "sClassCat": "M1",
+        "aMRM": [
+            "Doom Knights gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Classic DoomKnight",
+        "auras": [
+            {
+                "nam": "Aggression",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 59,
+                        "sta": "cpo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Resolute",
+                "e": [
+                    {
+                        "val": -0.1,
+                        "id": 429,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Doom Strike"
+            }
+        ],
+        "tInf": "p:10040",
+        "actions": {
+            "passive": [
+                {
+                    "id": 71,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Aggression",
+                    "desc": "You deal 10% additional damage with physical attacks",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 72,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Resolute",
+                    "desc": "Damage Resistance increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 73,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Doom Strike",
+                    "desc": "chance to do big damage",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "auraID": 823,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "doomStrike",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 66,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.15,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2300
+                },
+                {
+                    "icon": "ims2,iwaxe",
+                    "mp": 10,
+                    "nam": "Soul Steal",
+                    "anim": "Attack3",
+                    "desc": "A quick attack that deals a small amount of damage but then applies Dark Wound on the target, dealing 100% of weapon DPS over 8 seconds. Stacks up to 5 times and heals you for twice the damage dealt at maximum stacks.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.3,
+                    "dsrc": "DK2",
+                    "id": 67,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "dlook": "Dark Wound",
+                    "cd": 3000
+                },
+                {
+                    "icon": "imd1,iwsword",
+                    "mp": 10,
+                    "nam": "Soul Crush",
+                    "anim": "Attack4",
+                    "desc": "A quick attack dealing physical and magical damage, improved by the number of Dark Wound stacks on the target.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "DK1",
+                    "id": 68,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "dlook": "Dark Wound",
+                    "cd": 4000
+                },
+                {
+                    "id": 69,
+                    "icon": "iss1",
+                    "ref": "a3",
+                    "nam": "Void Strike",
+                    "anim": "Stab",
+                    "mp": 20,
+                    "desc": "A strong attack which deals weapon damage plus additional damage increased the closer you are to death.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.2,
+                    "tgt": "h",
+                    "typ": "p",
+                    "dsrc": "HPd",
+                    "cd": 10000
+                },
+                {
+                    "icon": "iwshield",
+                    "nam": "Blood Offering",
+                    "anim": "Attack4",
+                    "mp": 25,
+                    "desc": "If Dark Wound is on the target, the caster will take additional damage per attack for 10 seconds, but will add some of the amount added to their next autoattack. Otherwise, applies a 3 second stun.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.1,
+                    "dsrc": "AP2",
+                    "id": 70,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 10000
+                }
+            ]
+        }
+    },
+    "Classic Dragonlord": {
+        "uid": 10040,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Dragonlords are aggressive front-line soldiers. They are skilled in an ancient school of enchanted combat arts.",
+        "sClassCat": "M4",
+        "aMRM": [
+            "Dragonlords gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Classic Dragonlord",
+        "auras": [
+            {
+                "nam": "Furious",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 13,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Resolute",
+                "e": [
+                    {
+                        "val": -0.1,
+                        "id": 14,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:10040",
+        "actions": {
+            "passive": [
+                {
+                    "id": 45,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Furious",
+                    "desc": "Increases all damage done by 15%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 15,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Resolute",
+                    "desc": "Damage taken reduced by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 9,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imr2,iwaxe",
+                    "mp": 20,
+                    "nam": "Cleave",
+                    "anim": "Thrash",
+                    "tgtMax": 2,
+                    "desc": "Deals moderate damage to up to two targets in melee range.",
+                    "isOK": true,
+                    "range": 401,
+                    "fx": "m",
+                    "damage": 0.66,
+                    "dsrc": "AP2",
+                    "id": 74,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 4000
+                },
+                {
+                    "icon": "ief2,iwsword2",
+                    "mp": 15,
+                    "nam": "Heated Blade",
+                    "anim": "Attack3",
+                    "desc": "Deals light damage and applies Searing Heat, reducing haste and hit chance by 5%, stacking up to 4 times and lasting 10 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "damage": 0.4,
+                    "dsrc": "AP2",
+                    "id": 75,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_ef2",
+                    "cd": 4000
+                },
+                {
+                    "id": 76,
+                    "icon": "iwsword,ieh1",
+                    "ref": "a3",
+                    "nam": "Lifestealer",
+                    "anim": "Stab",
+                    "mp": 35,
+                    "desc": "Deals damage based on the difference between your current and maximum HP, and heals you for some of the damage dealt.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "tgt": "h",
+                    "typ": "p",
+                    "dsrc": "HPSteal2",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ied2",
+                    "mp": 20,
+                    "anim": "Cast1",
+                    "nam": "Cursed Blade",
+                    "tgtMax": 2,
+                    "desc": "Deals damage inversely proportional to your current MP to up to 2 targets. Applies Cursed Blood, increasing the target's damage taken by 12% for 10 seconds.",
+                    "isOK": true,
+                    "range": 401,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "MPd",
+                    "id": 77,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_ed1",
+                    "cd": 8000
+                }
+            ]
+        }
+    },
+    "Classic Exalted Soul Cleaver": {
+        "uid": 7658,
+        "iCP": 22975,
+        "cmd": "sAct",
+        "sDesc": "Vowing loyalty to the legion has it's perks. The Soul Cleaver fights best on the brink of death where he can channel his magical abilities to shred his opponent... starting with it's soul.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Soul Cleavers gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total. The lower your health the more you will get."
+        ],
+        "sClassName": "Classic Exalted Soul Cleaver",
+        "auras": [
+            {
+                "nam": "No Pain No Gain",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 15,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Might of the Legion",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 22,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:7658",
+        "actions": {
+            "passive": [
+                {
+                    "id": 615,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "No Pain No Gain",
+                    "desc": "All damage taken increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 616,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Might of the Legion",
+                    "desc": "You deal 10% more damage with all attacks.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 617,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "For the Legion",
+                    "desc": "Every soldier for the legion put's his life on the line. If Dage so chooses he can sacrifice you to strengthen his forces.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": false,
+                    "range": 301,
+                    "auraID": 834,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "Aura1000",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 419,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "DmgFct": 2,
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "id": 612,
+                    "icon": "iss1",
+                    "ref": "a1",
+                    "nam": "Soul Rend",
+                    "anim": "Cast1",
+                    "mp": 15,
+                    "desc": "Deals damage based on the difference between your current and maximum HP.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 1,
+                    "tgt": "h",
+                    "typ": "pm",
+                    "dsrc": "HPd",
+                    "cd": 5000
+                },
+                {
+                    "icon": "ied1",
+                    "nam": "Soul Leech",
+                    "anim": "Cast1",
+                    "mp": 40,
+                    "desc": "Drain life directly from your target's soul. Weakens them lowering their damage and returning health to you for the same amount.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "Leech1",
+                    "id": 611,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "cd": 17000
+                },
+                {
+                    "icon": "ims4",
+                    "mp": 30,
+                    "nam": "Soul Snare",
+                    "anim": "Cast2",
+                    "desc": "Trap your opponents soul from afar stunning them for 4 seconds. Soul Snare cannot be dodged.",
+                    "forceResult": "hit",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 0,
+                    "dsrc": "APSP1",
+                    "id": 613,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "cd": 35000
+                },
+                {
+                    "icon": "imr1",
+                    "mp": 0,
+                    "nam": "Blood Price",
+                    "anim": "Hit",
+                    "desc": "Sacrifice your very life force to increase all damage dealt by 75% and your chance to hit by 30% for 12 seconds. For the Legion!",
+                    "forceResult": "hit",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 3,
+                    "dsrc": "APSP1",
+                    "id": 614,
+                    "ref": "a4",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "cd": 45000
+                }
+            ]
+        }
+    },
+    "Classic Legion DoomKnight": {
+        "uid": 7658,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Even DoomKnights swear their service to Dage. Their souls have been claimed by both Dage and Doom.\r\n",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Legion DoomKnights gain mana from all hits landed in combat,  especially on crits. The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Classic Legion DoomKnight",
+        "auras": [
+            {
+                "nam": "Dage's Favor",
+                "e": [
+                    {
+                        "val": 0.2,
+                        "id": 1,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Strength of the Legion",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 23,
+                        "sta": "tcr",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.05,
+                        "id": 39,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Doom Armor",
+                "e": [
+                    {
+                        "val": -0.1,
+                        "id": 429,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:7658",
+        "actions": {
+            "passive": [
+                {
+                    "id": 839,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Dages' Favor",
+                    "desc": "Deal 20% more damage from all sources.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 840,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Strength of the Legion",
+                    "desc": "10% to crit chance and 5% to hit chance.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 841,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Doom Armor",
+                    "desc": "Reduces all damage taken by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 16,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imhc",
+                    "mp": 15,
+                    "anim": "Cast2",
+                    "nam": "Touch of Doom",
+                    "tgtMax": 1,
+                    "desc": "Applies Touch of Doom and Touch of Death to your opponent, increasing their damage taken by 7% and reducing their damage done by 5%. Applies Touch of Demise to you, increasing your damage done by 7%. All auras last 6 seconds and stack to 4.",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.25,
+                    "dsrc": "AP2",
+                    "id": 834,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_mod1",
+                    "cd": 4000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "isf1",
+                    "mp": 25,
+                    "anim": "Sword/ShieldAttack2",
+                    "nam": "Soul Siphon",
+                    "tgtMax": 1,
+                    "desc": "Using Dage's knowledge of souls you assault your opponent's soul directly and take some of their force to heal yourself.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "Leech1",
+                    "id": 835,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ed1v2",
+                    "cd": 6000
+                },
+                {
+                    "icon": "ied2",
+                    "mp": 15,
+                    "anim": "Cast1",
+                    "nam": "Legion Dark Blast",
+                    "desc": "You immerse yourself in the Darkness of the Legion and direct that power towards your opponent dealing large damage. Applies Torment to the target for 4 seconds, reducing their hit chance and haste by 10%. This is furthered with Shadow Step, continuing to reduce their hit chance and haste by an additional 15% for 4 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 2,
+                    "dsrc": "AP2",
+                    "ct": 2000,
+                    "id": 836,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ed3",
+                    "cd": 6000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ied1",
+                    "mp": 30,
+                    "anim": "Psychic2",
+                    "nam": "Imminent Doom",
+                    "tgtMax": 1,
+                    "desc": "Doom hastens and the Legion beckons. Does a strike for large damage and hastens your opponent's doom dealing a huge DoT over 8 Seconds. Also adds Decay, Cannot Heal for 10 seconds preventing your opponent from healing. Also applies Legion, increasing your hit chance by 15% for 8 seconds.",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 2.6,
+                    "dsrc": "AP2",
+                    "id": 838,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_ed1",
+                    "cd": 16000
+                }
+            ]
+        }
+    },
+    "Classic Paladin": {
+        "uid": 10040,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Paladins are noble, strictly honorable fighters, who defend the weak and destroy the wicked. They fight with exceptional physical strength and healing power.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Classic Paladins gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Classic Paladin",
+        "auras": [
+            {
+                "nam": "Noble Mark",
+                "e": [
+                    {
+                        "val": 1.2,
+                        "id": 57,
+                        "sta": "END",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Contemplative",
+                "e": [
+                    {
+                        "val": 0.05,
+                        "id": 575,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Divine Recovery"
+            }
+        ],
+        "tInf": "p:10040",
+        "actions": {
+            "passive": [
+                {
+                    "id": 137,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Noble Mark",
+                    "desc": "Endurance increased by 20%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1166,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Contemplative",
+                    "desc": "Crit chance increased by 5%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 139,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Divine Recovery",
+                    "desc": "On rare occasions the paladin and his entire team are fully healed and granted temporary invulnerability.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "auraID": 836,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "Recovery",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 16,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "id": 1162,
+                    "icon": "imr2,iwmace",
+                    "ref": "a1",
+                    "nam": "Abolish",
+                    "anim": "Attack4",
+                    "mp": 10,
+                    "desc": "A quick strike dealing weapon damage plus magical damage. ",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "tgt": "h",
+                    "typ": "pm",
+                    "dsrc": "APSP2",
+                    "cd": 3000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imf1,ieh1",
+                    "mp": 25,
+                    "anim": "Castgood",
+                    "nam": "Healing Word",
+                    "tgtMax": 2,
+                    "desc": "Heals a friendly target for a moderate amount.",
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "w",
+                    "damage": -6,
+                    "from": "tgt",
+                    "dsrc": "APSP1",
+                    "ct": 2000,
+                    "id": 1163,
+                    "ref": "a2",
+                    "tgt": "f",
+                    "typ": "pm",
+                    "strl": "sp_eh1",
+                    "cd": 6000
+                },
+                {
+                    "icon": "iiclass,ieh1",
+                    "mp": 15,
+                    "anim": "Cast1",
+                    "nam": "Exorcise",
+                    "desc": "A light based ranged attack, high damage against undead enemies.",
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "p",
+                    "damage": 1.02,
+                    "dsrc": "EX1",
+                    "ct": 2000,
+                    "funcRace": "Undead",
+                    "id": 1164,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_el3",
+                    "cd": 6000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iel2",
+                    "mp": 40,
+                    "anim": "Cast1",
+                    "nam": "Blinding Light",
+                    "tgtMax": 6,
+                    "desc": "Deals damage to all enemies in range.",
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "w",
+                    "damage": 3.1,
+                    "dsrc": "APSP1",
+                    "id": 1165,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_ee1",
+                    "cd": 7000
+                }
+            ]
+        }
+    },
+    "Daimon": {
+        "uid": 10040,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "You have honed your psychic abilities to work in unison with your weaponry, but understand that working in tandem with allies can make the difference between victory and defeat.",
+        "sClassCat": "C1",
+        "aMRM": [
+            "Daimons gains mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Daimon",
+        "auras": [
+            {
+                "nam": "Wrath of the Touched",
+                "e": [
+                    {
+                        "val": 0.08,
+                        "id": 10,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Touched Mind",
+                "e": [
+                    {
+                        "val": 1.15,
+                        "id": 73,
+                        "sta": "INT",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Mind Buff"
+            }
+        ],
+        "tInf": "p:10040",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1059,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Wrath of the Touched",
+                    "desc": "Increase Crit by 8%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1060,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Touched Mind",
+                    "desc": "Intellect increased 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1063,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Mind Buffs Matter",
+                    "desc": "Small chance to greatly increase the power of an aoe ability.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "auraID": 828,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "EleStorm",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 1055,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Actual Attack",
+                    "anim": "Psychic1",
+                    "desc": "Using your mind, you reach out and cause pain to your foe... and boy, do they feel it!",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.25,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "SP1",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dai2",
+                    "nam": "Mass Affect",
+                    "mp": 25,
+                    "anim": "Castgood",
+                    "tgtMax": 7,
+                    "desc": "Heals you and up to 6 allies while placing 1 of 5 random buffs on them.The heal is twice as strong if another player is selected. If an enemy is selected, you will be healed for twice the amount.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -3,
+                    "dsrc": "AoE1",
+                    "randomLength": 4,
+                    "id": 1057,
+                    "ref": "a1",
+                    "tgt": "f",
+                    "typ": "m",
+                    "strl": "sp_eh1",
+                    "randomAura": true,
+                    "cd": 12000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dai1",
+                    "nam": "BrainWave",
+                    "mp": 14,
+                    "anim": "Psychic1",
+                    "tgtMax": 3,
+                    "desc": "A wave of psychic fire engulfs up to 3 foes dealing moderate damage and applies either Mental Burn or Psychic Burn. Mental Burn deals less damage per tick but lasts 12 seconds. Psychic Burn deals more damage per tick but only lasts 6 seconds. They don't stack but you can have both applied on an enemy at once.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 0.8,
+                    "dsrc": "SP2",
+                    "randomLength": 1,
+                    "id": 1056,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_dai1",
+                    "randomAura": true,
+                    "cd": 6000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dai3",
+                    "mp": 20,
+                    "anim": "Cast3",
+                    "nam": "Shattered Reality",
+                    "tgtMax": 2,
+                    "desc": "A powerful psychic burst AoE which will hit up to 2 foes. Applies Mental Weakness, reducing their damage by 40% for 5 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 1.5,
+                    "dsrc": "SP2",
+                    "id": 1061,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "DmgFct": 2,
+                    "strl": "sp_dai3",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dai4",
+                    "mp": 30,
+                    "anim": "Psychic2",
+                    "nam": "Mind... BLOWN",
+                    "tgtMax": 3,
+                    "desc": "Deals solid psychic damage to up to 3 targets and increases your haste and crit chance by 30% for 10 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 2.75,
+                    "dsrc": "SP2",
+                    "id": 1062,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_dai4",
+                    "cd": 25000
+                }
+            ]
+        }
+    },
+    "DoomKnight Overlord": {
+        "uid": 57386,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "You are the enemy of light. You are the unliving embodiment of all things dark. The Doomknight Overlord is a Fighter type class who prizes strength. ",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Doomknight Overlord gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "DoomKnight Overlord",
+        "auras": [
+            {
+                "nam": "Black Blood",
+                "e": [
+                    {
+                        "val": 0.12,
+                        "id": 140,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Raw Hate",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 22,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Death Knell"
+            }
+        ],
+        "tInf": "p:57386",
+        "actions": {
+            "passive": [
+                {
+                    "id": 276,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Black Blood",
+                    "desc": "Increase Crit by 12%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 277,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Raw Hate",
+                    "desc": "Increase Damage by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 279,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Death Knell",
+                    "desc": "Your foe is attacked by it's own shadow, dealing massive damage as it resists being pulled to the underworld.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "auraID": 825,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "doomStrike",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 16,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "icon": "iwsword,ims4",
+                    "mp": 10,
+                    "anim": "Cast2",
+                    "nam": "Torture",
+                    "desc": "Magically torment your foe's mind, causing slight damage but also reducing their damage and crit. Damage increase with each additional party member (click a player's portrait to add them to your party).",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.2,
+                    "dsrc": "Party1",
+                    "id": 273,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "DmgFct": 2,
+                    "strl": "sp_ed1",
+                    "cd": 3000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ied2,ied1",
+                    "mp": 25,
+                    "anim": "Cast3",
+                    "nam": "Screaming Darkness",
+                    "tgtMax": 5,
+                    "desc": "Causes all foes within range to burst into flames, dealing moderate damage and causing them to burn for Damage over time. Effects increase with each additional party member (click a player's portrait to add them to your party).",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "Party1",
+                    "id": 274,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "DmgFct": 2,
+                    "strl": "sp_ef2",
+                    "cd": 12000
+                },
+                {
+                    "id": 275,
+                    "icon": "imh2,ime1",
+                    "ref": "a3",
+                    "nam": "Dark Challenge",
+                    "anim": "Castgood",
+                    "mp": 25,
+                    "desc": "Has a 50/50 chance of either stunning your foe a few seconds or giving you back some health. Healing effects increase with each additional party member (click a player's portrait to add them to your party).",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "h",
+                    "typ": "m",
+                    "randomLength": 1,
+                    "randomAura": true,
+                    "cd": 10000
+                },
+                {
+                    "icon": "isp1",
+                    "nam": "Miasma",
+                    "anim": "Thrash",
+                    "mp": 35,
+                    "desc": "Deals massive damage and significantly lowers your target's ability to hit anything for a short while.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 6,
+                    "dsrc": "AP2",
+                    "id": 278,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 8000
+                }
+            ]
+        }
+    },
+    "Dragonlord": {
+        "uid": 10099,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Armed with the might, wisdom, and cunning of ancient dragons, the DragonLord charges into battle with their bonded dragon at their side. Those worthy of greater power can evolve and unleash their elemental draconic magic to devastate the battlefield.",
+        "sClassCat": "M4",
+        "aMRM": [
+            "Dragonlords gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Dragonlord",
+        "auras": [
+            {
+                "nam": "Dragon's Keen Eye",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 398,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Dragon's Amulet",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 240,
+                        "sta": "cpo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Primal Dragon's Power"
+            }
+        ],
+        "tInf": "p:10099",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1729,
+                    "ref": "p1",
+                    "icon": "dsg3",
+                    "nam": "Dragon\u2019s Keen Eye",
+                    "desc": "Increases Hit Chance by 15%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1730,
+                    "ref": "p2",
+                    "icon": "dsg3",
+                    "nam": "Dragon\u2019s Amulet",
+                    "desc": "Increases Physical Damage by 15%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1731,
+                    "ref": "p3",
+                    "icon": "dsg3",
+                    "nam": "Primal Dragon\u2019s Power",
+                    "desc": "Primal Alignment now applies Elemental Unity and Primal Incarnation, increasing outgoing damage by 20%, Hit Chance by 40%, and Crit Multiplier by 50% for 8 seconds, increased to 60%, 100%, and 100% respectively for 3 seconds after that.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "tgtMin": 1,
+                    "icon": "ims4,isp1",
+                    "mp": 0,
+                    "anim": "Attack1:PetAttack1",
+                    "nam": "Draconic Onslaught",
+                    "tgtMax": 3,
+                    "desc": "Dragonlords channel the might of dragons into their attacks, striking 3 targets at once. Applies a stack of Draconic Patience for 20 seconds, increasing Outgoing Damage by 3%, up to 10 stacks.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 0.4,
+                    "dsrc": "AP2",
+                    "id": 1724,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "cd": 3000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ief2,iwsword2",
+                    "mp": 25,
+                    "anim": "Attack3",
+                    "nam": "Legacy Ablaze",
+                    "tgtMax": 3,
+                    "desc": "Draw upon the destructive power of dragons to blast 3 targets with a powerful attack. Your fury applies Draconic Rage for 8 seconds, increasing your Outgoing Physical Damage by 15%.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 0.7,
+                    "dsrc": "AP1",
+                    "id": 1725,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_ef2",
+                    "cd": 4000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iwshield,ieh1",
+                    "nam": "Destiny Defended",
+                    "mp": -45,
+                    "anim": "Powerup:PetBuff",
+                    "tgtMax": 1,
+                    "desc": "Tap into the regenerative power of dragons to protect yourself, healing HP and regaining 45 Mana. Also applies Draconic Bulwark for 5 seconds, reducing Incoming Damage by 20% but prevents you from gaining Draconic Rage for the same time.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": -1.5,
+                    "dsrc": "AP1",
+                    "id": 1726,
+                    "ref": "a2",
+                    "pet": 57307,
+                    "tgt": "s",
+                    "typ": "pm",
+                    "cd": 12000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iiw1,ims4",
+                    "mp": 20,
+                    "anim": "Cast3",
+                    "nam": "Draconic Resonation",
+                    "tgtMax": 3,
+                    "desc": "Resonate with the will of dragons to regain control of the battlefield and attack 3 targets. Applies Draconic Flight for 12 seconds, increasing your Haste by 30%. If you have Draconic Rage, applies Draconic Wrath for 12 seconds, increasing Outgoing Physical Damage by a further 15%.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 0.4,
+                    "dsrc": "AP1",
+                    "id": 1727,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_ee2",
+                    "cd": 6000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dsg4",
+                    "mp": 50,
+                    "anim": "Castgood",
+                    "nam": "Primal Alignment",
+                    "tgtMax": 3,
+                    "desc": "Channel the power of the Dragonheart Shards to fulfill your dragonic destiny. Inflict damage to 3 targets based on missing MP and apply Elemental Dissonance for 16 seconds, reducing their damage, Crit Chance, Crit Multiplier, Hit Chance, Dodge, and Defense by 15% each.",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 0.85,
+                    "dsrc": "MPd",
+                    "id": 1728,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "hasPassives": true,
+                    "strl": "ef_dsg4",
+                    "cd": 13000
+                }
+            ]
+        }
+    },
+    "Elemental Dracomancer": {
+        "uid": 6696,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Elemental Dracomancers are the spirit kin of the dragons and Elemental Dracomancers are the spirit kin of the Elemental Prime Dragons. Their spiritual connection allows them to call upon the dragon's magic powers at will. ",
+        "sClassCat": "C1",
+        "aMRM": [
+            "Elemental Dracomancers gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Elemental Dracomancer",
+        "auras": [
+            {
+                "nam": "Dragon's Knowledge",
+                "e": [
+                    {
+                        "val": 1.1,
+                        "id": 54,
+                        "sta": "INT",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Dragon's Wisdom",
+                "e": [
+                    {
+                        "val": 1.1,
+                        "id": 182,
+                        "sta": "WIS",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Primal Power"
+            }
+        ],
+        "tInf": "p:6696",
+        "actions": {
+            "passive": [
+                {
+                    "id": 252,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Dragon's Knowledge",
+                    "desc": "Increase Int by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 253,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Dragon's Wisdom",
+                    "desc": "Increase Wisdom by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 254,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Primal Power",
+                    "desc": "Rarely, you get in touch with the united power of Desoloth The Final and ALL your attacks are Crits a short time.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 419,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "DmgFct": 2,
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "icon": "ief2",
+                    "mp": 25,
+                    "nam": "Ssikari's Breath",
+                    "anim": "FireBreath",
+                    "desc": "Breathes fire on your target causing moderate damage and applying the DragonBurn state to them for Damage Over Time.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "damage": 1.3,
+                    "dsrc": "SP2",
+                    "id": 248,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ef2",
+                    "cd": 5000
+                },
+                {
+                    "icon": "iew1",
+                    "mp": 25,
+                    "nam": "Lliath's Torrent",
+                    "anim": "Cast3",
+                    "desc": "Summon the Water Prime's power and hit your foe with a crushing jet of water, which has a slight chance to stun your target.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 1.5,
+                    "dsrc": "SP2",
+                    "id": 249,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_wtr",
+                    "cd": 5000
+                },
+                {
+                    "icon": "iee2",
+                    "nam": "Duradun's Scales",
+                    "mp": 0,
+                    "anim": "Castgood",
+                    "desc": "Gather magical essence from nearby ley lines, healing a small amount of HP immediately, while also increasing damage resistance by 75% and recovering MP for 6 seconds.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -0.25,
+                    "dsrc": "SP1",
+                    "id": 250,
+                    "ref": "a3",
+                    "tgt": "s",
+                    "typ": "m",
+                    "strl": "sp_el2",
+                    "cd": 10000
+                },
+                {
+                    "icon": "iiw1",
+                    "nam": "Astialo's Wings",
+                    "mp": 50,
+                    "anim": "Cast2",
+                    "desc": "Spread your wings and take flight at your opponent, striking them for unavoidable damage that cannot crit, and increasing your own haste by 100% and reducing mana costs by 50% for 8 seconds.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 2,
+                    "dsrc": "SP2",
+                    "id": 251,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ee2",
+                    "cd": 10000
+                }
+            ]
+        }
+    },
+    "Enforcer": {
+        "uid": 9740,
+        "iCP": 29704,
+        "cmd": "sAct",
+        "sDesc": "The Enforcer is a very powerful, experimental offensive suit. It can launch powerful attacks at multiple enemies at once.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Enforcers gain mana from all hits landed in combat, and especially on crits. The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Enforcer",
+        "auras": [
+            {
+                "nam": "Quick Like Lightning",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 1609,
+                        "sta": "tha",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.15,
+                        "id": 398,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Grounded",
+                "e": [
+                    {
+                        "val": -0.25,
+                        "id": 218,
+                        "sta": "cai",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:9740",
+        "actions": {
+            "passive": [
+                {
+                    "id": 2240,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Quick Like Lightning",
+                    "desc": "Haste and Hit Chance increased by 15%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 2241,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Grounded",
+                    "desc": "Damage Resistance increased by 25%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 2235,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ims2,iwmace",
+                    "nam": "Jackhammer",
+                    "mp": 15,
+                    "anim": "Psychic2",
+                    "tgtMax": 2,
+                    "desc": "Unleash a powerful stomp, splitting open the ground around you. Applies Fracture, reducing your target's Dodge by 20% for 6 seconds. Can't miss or crit.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 401,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 2.25,
+                    "dsrc": "AP2",
+                    "id": 2236,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_enforcera1",
+                    "cd": 4000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imr2,iee2",
+                    "mp": 20,
+                    "anim": "Cast3",
+                    "nam": "Arc Lightning",
+                    "tgtMax": 4,
+                    "desc": "Emit a burst of electrical energy that bounces to up to 4 targets, with each bounce dealing increased damage. ",
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "c",
+                    "damage": 1.2,
+                    "dsrc": "chain1",
+                    "id": 2238,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "lit1",
+                    "cd": 8000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iee2",
+                    "nam": "Plasma Bolt",
+                    "mp": 20,
+                    "anim": "Cast1",
+                    "tgtMax": 1,
+                    "desc": "Discharge an energy bolt, dealing bonus damage if you're Supercharged but consuming your charge. Applies Flash Bolt, reducing your target's Hit Chance by 20% for 8 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "auraName": "Supercharged",
+                    "damage": 2.5,
+                    "dsrc": "Legend1",
+                    "id": 2237,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "DmgFct": 2,
+                    "strl": "sp_ee1",
+                    "cd": 10000
+                },
+                {
+                    "id": 2239,
+                    "icon": "iwshield,ims1",
+                    "ref": "a4",
+                    "nam": "Event Horizon",
+                    "anim": "Cast3",
+                    "mp": 25,
+                    "desc": "Supercharge your armor, healing you over time. Also applies Event Horizon, reducing the damage you take based on your Attack Power. Both effects last 12 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "strl": "sp_classm2",
+                    "cd": 20000
+                }
+            ]
+        }
+    },
+    "Evolved Pumpkin Lord": {
+        "uid": 10099,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Pumpkin Lords are evil magical pumpkins that are a lot more menacing than the name suggests.",
+        "sClassCat": "M4",
+        "aMRM": [
+            "Pumpkin Lords gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Evolved Pumpkin Lord",
+        "auras": [
+            {
+                "nam": "Throsn",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 22,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Ferilized",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 201,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Pumpkin Splat",
+                "e": [
+                    {
+                        "val": 0.07,
+                        "id": 136,
+                        "sta": "tcr",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.07,
+                        "id": 200,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:10099",
+        "actions": {
+            "passive": [
+                {
+                    "id": 909,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Thorns",
+                    "desc": "Damage increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 910,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Fertilized",
+                    "desc": "Haste increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 911,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Pumpkin Splat",
+                    "desc": "Haste and Crit Chance increased by 7%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 9,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A strong attack known only to disciplined fighters. Damage dealt is based on weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iee1,iwstaff",
+                    "mp": 15,
+                    "anim": "Cast1",
+                    "nam": "Vine Whip",
+                    "tgtMax": 1,
+                    "desc": "You use a pumpkin vine as a whip which deals high damage. Cannot miss but cannot crit.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "p",
+                    "damage": 3.5,
+                    "dsrc": "AP1",
+                    "id": 904,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "ef_whip",
+                    "cd": 4000
+                },
+                {
+                    "id": 905,
+                    "icon": "iep1",
+                    "ref": "a2",
+                    "nam": "Siphon",
+                    "anim": "Cast3",
+                    "mp": 25,
+                    "desc": "You grab your opponent with your vines and siphon life and energy from them! You gain a 20% haste boost and HoT (600%) for 8 seconds. If ready to sprout is applied, you consume it and take 30% less damage and gain 25% more healing for 30 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "p",
+                    "tgt": "s",
+                    "typ": "p",
+                    "strl": "ef_siphon",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "isp1",
+                    "mp": 20,
+                    "anim": "PolearmAttack1",
+                    "nam": "Seed of Despair",
+                    "tgtMax": 1,
+                    "desc": "You sow seeds of despair and plant them in your foes. Applies drained of strength which makes your opponent take 15% more damage and deal 15% less for 10 seconds. Also applies ready to sprout, which has extra effects on the other moves.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "AP1",
+                    "id": 907,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 15000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ief2",
+                    "nam": "Explosive Pumpkins",
+                    "mp": 0,
+                    "anim": "Cast3",
+                    "tgtMax": 1,
+                    "desc": "You grow a specialized explosive pumpkin that detonates in a ball of glorious flames dealing massive damage to your target at the cost of 20% of your own HP. If ready to sprout is applied, consume it and apply a DoT on the enemy.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 2,
+                    "dsrc": "BT3",
+                    "id": 908,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "DmgFct": 2,
+                    "strl": "ef_pump",
+                    "cd": 4000
+                }
+            ]
+        }
+    },
+    "Evolved Shaman": {
+        "uid": 6696,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Shamans command the primal elements in battle.",
+        "sClassCat": "C3",
+        "aMRM": [
+            "Shamans gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "Evolved Shaman",
+        "auras": [
+            {
+                "nam": "Ancestral Teachings",
+                "e": [
+                    {
+                        "val": 1.3,
+                        "id": 1388,
+                        "sta": "WIS",
+                        "typ": "*"
+                    },
+                    {
+                        "val": 1.3,
+                        "id": 673,
+                        "sta": "INT",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Primal Fury",
+                "e": [
+                    {
+                        "val": 0.08,
+                        "id": 10,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Elemental Storm"
+            }
+        ],
+        "tInf": "p:6696",
+        "actions": {
+            "passive": [
+                {
+                    "id": 94,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Ancestral Teachings",
+                    "desc": "Intellect and Wisdom increased by 30%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 95,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Primal Fury",
+                    "desc": "Crit chance increased by 8%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 96,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Elemental Storm",
+                    "desc": "Small chance to greatly increase the power of an aoe ability.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "auraID": 828,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "EleStorm",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 89,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.9,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ief1,iei3",
+                    "nam": "Freezing Flame",
+                    "mp": 15,
+                    "anim": "Cast2",
+                    "tgtMax": 3,
+                    "desc": "Deals moderate damage and either burns your foe for damage over time or freezes your target in place, stunning them for 4 seconds. Effect increased by Elemental Grasp.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 0.5,
+                    "dsrc": "EE4",
+                    "randomLength": 1,
+                    "id": 90,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ef1",
+                    "randomAura": true,
+                    "cd": 6000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iea1",
+                    "mp": 20,
+                    "anim": "Cast2",
+                    "nam": "Furious Gale",
+                    "tgtMax": 3,
+                    "desc": "Deals damage and reduces enemy haste while increasing yours for a short time. Effects both increased by Elemental Grasp.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "damage": 1,
+                    "dsrc": "EE4",
+                    "id": 91,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ee1",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iew1",
+                    "mp": 20,
+                    "anim": "Cast2",
+                    "nam": "Refreshing Rain",
+                    "tgtMax": 4,
+                    "desc": "Casts a Heal Over Time on yourself and nearby allies. Heal amount is increased by Furious Gale.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -0.5,
+                    "dsrc": "EE4",
+                    "id": 92,
+                    "ref": "a3",
+                    "tgt": "f",
+                    "typ": "m",
+                    "strl": "sp_ei3",
+                    "cd": 15000
+                },
+                {
+                    "icon": "ims4,imh1",
+                    "nam": "Elemental Grasp",
+                    "mp": 60,
+                    "anim": "Cast3",
+                    "desc": "Deals light damage to target and applies Elemental Grasp, negating all target Evasion and Critical Strike chance. This effect also makes the Evolved Shaman's spells more powerful, and gets stronger the more spells the Shaman casts against the target.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 0.4,
+                    "dsrc": "SP2",
+                    "id": 93,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_ef2",
+                    "cd": 16000
+                }
+            ]
+        }
+    },
+    "HighSeas Commander": {
+        "uid": 22084,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Highseas Commander are opportunistic rogues and treasure hunters of the sea. Combat might not always go their way but they will do the best they can to make the most of any combat situation they find themselves in.",
+        "sClassCat": "C1",
+        "aMRM": [
+            "Commanders gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Dodge any attack (restores HP as well)"
+        ],
+        "sClassName": "HighSeas Commander",
+        "auras": [
+            {
+                "nam": "Enchanted Gear",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 41,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Rune Amulet",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 37,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Sigil of the Captain",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 22,
+                        "sta": "cao",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.1,
+                        "id": 21,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:22084",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1510,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Enchanted Gear",
+                    "desc": "15% to dodge",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1509,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Rune Amulet",
+                    "desc": "15% to crit",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1515,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Sigil of the Captain",
+                    "desc": "After honing your pirate abilities over a long period of time you've mastered the arts of being a Highseas Commander! Increases damage and dodge by 10%!",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 1508,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "DmgFct": 2,
+                    "dsrc": "AP2",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "isi1,isl1",
+                    "mp": 7,
+                    "anim": "Thrash",
+                    "nam": "Combo Runes",
+                    "tgtMax": 1,
+                    "desc": "Your runes are your primary weapon and your weapon of choice. Applies Dodge Rune for 4 seconds and one stack of Combo Rune on yourself. Each stack increases your chance to crit by 7% up to 5 stacks for 10 seconds. Also applies Empowered Rune, increasing crit damage by 15% up to 5 stacks for 10 seconds.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.45,
+                    "dsrc": "SP1",
+                    "id": 1514,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "cd": 3000
+                },
+                {
+                    "id": 1513,
+                    "icon": "iic2,dai2",
+                    "ref": "a2",
+                    "nam": "Magical Enhancement",
+                    "anim": "Powerup",
+                    "mp": 15,
+                    "desc": "You activate the power of your summoned Runes, enchanting you with a different effect for each active Rune you have:\r\nHaste Rune: +30% Haste\r\nDodge Rune: +30% Dodge\r\nHealing Rune: HoT\r\n\r\nEach effect lasts 12 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "m",
+                    "cd": 5000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "dai4,iwgun",
+                    "mp": 10,
+                    "anim": "Cast2",
+                    "nam": "Rune Cannon",
+                    "tgtMax": 1,
+                    "desc": "You always carry a rune cannon around saving it for the opportune moment. Deals heavy damage. Applies Cannon Fodder which increases all damage taken by the target by 30% for 6 seconds, and if Combo Rune is active, also applies Cannon Burn dealing 400% damage over 6 seconds. Also applies Healing Rune for 4 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.65,
+                    "dsrc": "SP1",
+                    "id": 1512,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "FireElement",
+                    "cd": 12000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imr1,imr2",
+                    "nam": "Supernova",
+                    "mp": 15,
+                    "anim": "Cast3",
+                    "tgtMax": 1,
+                    "desc": "Chant the ancient words of sacred text that you found on your journeys. Deals massive damage that always crits and never misses. Applies Runebound Destruction, increasing your opponents haste by 25% while reducing their damage by 40%. Also applies Haste Rune for 4 seconds.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.45,
+                    "dsrc": "SP2",
+                    "id": 1511,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "ef_ms",
+                    "cd": 15000
+                }
+            ]
+        }
+    },
+    "SkyGuard Grenadier": {
+        "uid": 10099,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "The Grenadiers are the toughest and most fearless soldiers that the Skyguard has to offer. They often lead assaults breaking through enemy lines with brute force and military weaponry.  ",
+        "sClassCat": "M1",
+        "aMRM": [
+            "Grenadier gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "SkyGuard Grenadier",
+        "auras": [
+            {
+                "nam": "Adrenaline Rush",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 2,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Battle Horn",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 803,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Sniper Sight",
+                "e": [
+                    {
+                        "val": 0.3,
+                        "id": 27,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:10099",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1520,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Adrenaline Rush",
+                    "desc": "Increase Haste by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1521,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Battle Horn",
+                    "desc": "Increase Damage by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1523,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Sniper Sight",
+                    "desc": "Hit chance +30%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "icon": "ime2",
+                    "mp": 0,
+                    "nam": "Bombard",
+                    "anim": "Cast1",
+                    "desc": "Fire a powerful, long ranged explosive round. Deals 133% weapon damage. You else apply a stack of Scorched to your target, which deals a small amount of damage and lasts 3 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 1.33,
+                    "dsrc": "AP2",
+                    "id": 1516,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "cd": 2750
+                },
+                {
+                    "icon": "iel2",
+                    "mp": 30,
+                    "nam": "Flashbang",
+                    "anim": "Cast1",
+                    "desc": "Deals moderate damage and applies Blinded. Blinded reduces enemy damage and chance to hit by 20% for 15 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 0.75,
+                    "dsrc": "AP2",
+                    "id": 1517,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_sun",
+                    "cd": 3000
+                },
+                {
+                    "icon": "imp1",
+                    "mp": 30,
+                    "nam": "Sleeping Gas",
+                    "anim": "Castgood",
+                    "desc": "Deals moderate damage and applies Gassed. Gassed reduces enemy defense by 20% for 15 seconds and reduces enemy dodge by 20% for 15 seconds. Also has a 25% chance to stun for 4 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "p",
+                    "damage": 1,
+                    "dsrc": "AP2",
+                    "id": 1518,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_ninja4",
+                    "cd": 3000
+                },
+                {
+                    "id": 1519,
+                    "icon": "iwgun",
+                    "ref": "a3",
+                    "nam": "Reload",
+                    "anim": "Powerup",
+                    "mp": -200,
+                    "desc": "Reload your ammo and recover all your mana. Reloading prevents you from using skills for 3 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "p",
+                    "dsrc": "AP2",
+                    "cd": 3000
+                },
+                {
+                    "icon": "icb5",
+                    "nam": "Reactive Grenade",
+                    "mp": 40,
+                    "anim": "Cast2",
+                    "desc": "Deals high damage (more if your enemy has Scorched), plus gives you secondary effects if your target is Blinded or Gassed. If Blinded, you Rally. Rally heals you over time. If Gassed, you Elude. Elude increases your Damage Resistance by 50% for 8 seconds. Secondary Effects last 8 seconds. Reactive Grenade can't miss and always crits.",
+                    "forceResult": "crit",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "p",
+                    "auraName": "Scorched",
+                    "damage": 2.75,
+                    "dsrc": "Pyro1",
+                    "id": 1522,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "DmgFct": 2,
+                    "strl": "sp_ef1",
+                    "cd": 10000
+                }
+            ]
+        }
+    },
+    "StarLord": {
+        "uid": 4980,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Starlords are quick and dangerous, capable of engaging mutliple enemies at range.",
+        "sClassCat": "M2",
+        "aMRM": [
+            "Starlords gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Dodge any attack (restores HP as well)"
+        ],
+        "sClassName": "StarLord",
+        "auras": [
+            {
+                "nam": "Elusive",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 41,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Locked On",
+                "e": [
+                    {
+                        "val": 0.05,
+                        "id": 39,
+                        "sta": "thi",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.1,
+                        "id": 23,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:4980",
+        "actions": {
+            "passive": [
+                {
+                    "id": 181,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Evasive Maneuvres",
+                    "desc": "Dodge chance increased by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 182,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Locked On",
+                    "desc": "Hit chance incresed 5%, critical strike chance increased by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 108,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A rapid attack studied only by a reclusive few. Damage dealt is based on weapon damage.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 0.8,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "DmgFct": 2,
+                    "dsrc": "AP2",
+                    "cd": 1500
+                },
+                {
+                    "icon": "imd1",
+                    "mp": 20,
+                    "nam": "Pulse Compression",
+                    "anim": "Cast2",
+                    "desc": "A moderately powerful ranged attack. Applies Pulse Compression, reducing the target's haste by 15% for 6 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 2.5,
+                    "dsrc": "AP1",
+                    "id": 177,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_ee1",
+                    "cd": 3000
+                },
+                {
+                    "icon": "imr2,ime2",
+                    "nam": "Pulse Dilation",
+                    "anim": "Attack4",
+                    "mp": 25,
+                    "desc": "If Pulse Compression is present on the target, deals heavy damage. Otherwise applies Shearing, a 3 second stun, but deals no damage.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "SL1",
+                    "id": 178,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imr2,iee2",
+                    "mp": 15,
+                    "anim": "Cast3",
+                    "nam": "Energy Arc",
+                    "tgtMax": 3,
+                    "desc": "Emits a burst of energy that will hit up to 3 targets. Also applies Loose Energy, a moderate DoT, to each.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "c",
+                    "damage": 1.2,
+                    "dsrc": "AP1",
+                    "id": 179,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "lit1",
+                    "cd": 3000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "imr1,iee2",
+                    "mp": 20,
+                    "anim": "Cast2",
+                    "nam": "High Energy Arc",
+                    "tgtMax": 3,
+                    "desc": "Emits a burst of energy that will hit up to 3 targets, dealing less damage with each bounce, returning part of the damage dealt as HP if the target is affected by Pulse Compression.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "c",
+                    "damage": 1.2,
+                    "dsrc": "SL2",
+                    "id": 180,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "lit1",
+                    "cd": 12000
+                }
+            ]
+        }
+    },
+    "Undead Leperchaun": {
+        "uid": 22084,
+        "iCP": 1,
+        "cmd": "sAct",
+        "sDesc": "Unlucky Leperchauns are not particularly lucky and things don\u2019t always go their way. Luckily for them, they\u2019ve learnt how to negate some of their bad luck.",
+        "sClassCat": "S1",
+        "aMRM": [
+            "Rogues gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Dodge any attack (restores HP as well)"
+        ],
+        "sClassName": "Undead Leperchaun",
+        "auras": [
+            {
+                "nam": "Shed Dead Weight",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 69,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Luck of the Undead",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 69,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Eirinn Go Brasch",
+                "e": [
+                    {}
+                ]
+            }
+        ],
+        "tInf": "p:22084",
+        "actions": {
+            "passive": [
+                {
+                    "id": 846,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Shed Dead Weight",
+                    "desc": "15% Haste",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": false,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 847,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Luck of the Undead",
+                    "desc": "10% Crit",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": false,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 265,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Eirinn Go Brasch",
+                    "desc": "Rarely, your astounding luck allows you to do QUADRUPLE damage on all crits for 10 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": false,
+                    "range": 301,
+                    "auraID": 844,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "Aura200",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "id": 258,
+                    "icon": "iwd1",
+                    "ref": "aa",
+                    "mp": 0,
+                    "nam": "Amas",
+                    "anim": "Attack1,Attack2",
+                    "desc": "A basic attack, taught to all adventurers.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "DmgFct": 2,
+                    "dsrc": "Lep1",
+                    "cd": 2000
+                },
+                {
+                    "icon": "iwdagger",
+                    "mp": 10,
+                    "anim": "Attack3",
+                    "nam": "Unluck of the Irish",
+                    "desc": "Instantly cause 50% weapon damage. Because you are unlucky, this will also either Increase your damage output by 20% or decrease your damage output by 10% for 5 seconds.",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 0.5,
+                    "dsrc": "AP1",
+                    "randomLength": 1,
+                    "id": 842,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "randomAura": true,
+                    "cd": 8000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iiclass2",
+                    "mp": 10,
+                    "nam": "Unlucky Strike",
+                    "anim": "Attack4",
+                    "tgtMax": 1,
+                    "desc": "This one is unlucky for your foe, not you. It does 125% weapon damage.",
+                    "isOK": false,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.25,
+                    "dsrc": "AP1",
+                    "id": 843,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 6000
+                },
+                {
+                    "icon": "iwd2",
+                    "nam": "Luck Reserves",
+                    "anim": "Castgood",
+                    "mp": 15,
+                    "desc": "You dispel a portion of your bad luck and deal moderate damage, Also applies Stalic for 12 seconds which causes all attacks to do 110% damage, increases Crit Chance and Crit Damage by an additional 7% each. Also reduces all incoming damage by 40% for 6 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": false,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "SP1",
+                    "id": 844,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "cd": 20000
+                },
+                {
+                    "id": 845,
+                    "icon": "imc3,iwwand",
+                    "ref": "a4",
+                    "nam": "Dark side of the Rainbow",
+                    "anim": "Castgood",
+                    "mp": 20,
+                    "desc": "Increases your LUCK stat by 15%, haste, Crit Chance, and Crit Damage by 10%, and your dodge by 25% for 15 seconds. Also increases your damage taken by 25% for 15 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": false,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "m",
+                    "cd": 30000
+                }
+            ]
+        }
+    },
+    "UndeadSlayer": {
+        "uid": 10099,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Undead slayers absorb spirit orbs from undead enemies and use that spirit power to improve their ability to defeat undead enemies.",
+        "sClassCat": "M1",
+        "aMRM": [
+            "Undead Slayers gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "sClassName": "UndeadSlayer",
+        "auras": [
+            {
+                "nam": "Rejuvenation",
+                "e": [
+                    {
+                        "val": 1.2,
+                        "id": 57,
+                        "sta": "END",
+                        "typ": "*"
+                    }
+                ]
+            },
+            {
+                "nam": "Blessed Speed Burst",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 2,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Spirit Surge"
+            }
+        ],
+        "tInf": "p:10099",
+        "actions": {
+            "passive": [
+                {
+                    "id": 188,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Rejuvenation",
+                    "desc": "Increases Endurance by 25%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 189,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Blessed Speed Burst",
+                    "desc": "Increases haste by 10% to quickly defeat undead enemies.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 190,
+                    "icon": "isp2",
+                    "ref": "p3",
+                    "nam": "Spirit Surge",
+                    "desc": "Grants a rare chance to completely fill your spirit power.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "pRule": "Spirit",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "icon": "iwd1",
+                    "mp": 0,
+                    "anim": "Attack1,Attack2",
+                    "nam": "Auto Attack",
+                    "desc": "A basic attack, taught to all adventures. When attacking undead you gain spirit power. Lasts 7 seconds if not restacked and stacks to 200.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "SAA",
+                    "id": 183,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "auraRule": "USAA",
+                    "typ": "aa",
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iiclass,ieh1",
+                    "mp": 10,
+                    "anim": "Cast1",
+                    "nam": "Exorcise",
+                    "tgtMax": 4,
+                    "desc": "A powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead. Hits up to 4 targets.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "p",
+                    "damage": 1,
+                    "dsrc": "US1",
+                    "id": 184,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "p",
+                    "strl": "sp_el3",
+                    "cd": 2000
+                },
+                {
+                    "id": 185,
+                    "icon": "imf1,ieh1",
+                    "ref": "a2",
+                    "nam": "Spirit of Healing",
+                    "anim": "Castgood",
+                    "mp": 20,
+                    "desc": "Heal your self with spirit power. If you have more than 4 stacks of Spirit Power, increases the healing amount up to 4 times at 64 stacks.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": -2,
+                    "tgt": "s",
+                    "typ": "p",
+                    "dsrc": "US2",
+                    "cd": 10000
+                },
+                {
+                    "id": 186,
+                    "icon": "imd1,iwsword",
+                    "ref": "a3",
+                    "nam": "Vorpal Strike",
+                    "anim": "Thrash",
+                    "mp": 10,
+                    "desc": "A very powerful spirit attack, damage enhanced by spirit power. Deals 150% more damage against Undead.",
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1.25,
+                    "tgt": "h",
+                    "typ": "p",
+                    "dsrc": "US1",
+                    "cd": 5000
+                },
+                {
+                    "icon": "iwpolearm",
+                    "nam": "Dragon Lance",
+                    "anim": "Stab",
+                    "mp": 30,
+                    "desc": "The Undead Slayer's ultimate attack. Requires at least 20 Spirit Power to use and deals more damage with more stacks of Spirit Power. Consumes all Spirit Power when used.",
+                    "sp": 20,
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 6.5,
+                    "dsrc": "US3",
+                    "id": 187,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "p",
+                    "cd": 30000
+                }
+            ]
+        }
+    },
+    "Overworld Chronomancer": {
+        "uid": 18551,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Recommended Enhancements: Lucky, Hybrid. Underworld Chronomancer rely on Hourglasses and Corruption they create using their Hourglass Pet (equipable items found in the Book of Lore) to manipulate and distort time itself.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Underworld Chronomancer gain mana from all hits landed in combat, and especially on critical hits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Overworld Chronomancer",
+        "auras": [
+            {
+                "nam": "Sandskin",
+                "e": [
+                    {
+                        "val": 0.1,
+                        "id": 958,
+                        "sta": "tdo",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Corruption Master",
+                "e": [
+                    {
+                        "val": 0.07,
+                        "id": 959,
+                        "sta": "tcr",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.07,
+                        "id": 960,
+                        "sta": "thi",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.07,
+                        "id": 961,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:18551",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1631,
+                    "ref": "p1",
+                    "icon": "i,i,i,i,uchronoP",
+                    "nam": "Sandskin",
+                    "desc": "Dodge chance increased by 10%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1632,
+                    "ref": "p2",
+                    "icon": "i,i,i,i,uchronoP",
+                    "nam": "Cosmic Energy",
+                    "desc": "Critical strike chance, Hit chance, and Haste increased by 7%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "icon": "i,i,i,i,i,uchronoAA",
+                    "mp": 0,
+                    "anim": "Attack1,Attack2",
+                    "nam": "Timeless Strike",
+                    "desc": "Deals damage based on your weapon damage. Each of your skills gets an additional benefit from hourglasses you equip in your consumables slot. Hourglasses can be obtained from the Hourglass Pet available from the Book of Lore.",
+                    "isOK": true,
+                    "range": 301,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1,
+                    "dsrc": "AP2",
+                    "id": 1626,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "strl": "sp_corruptchaa",
+                    "cd": 2000
+                },
+                {
+                    "icon": "i,i,i,i,i,uchronoA1",
+                    "mp": 15,
+                    "nam": "Timeless Rift",
+                    "anim": "Attack4",
+                    "desc": "Deals damage to your target and applies Temporal Rift to you. Temporal Rift stacks 4 times, lasts 30 seconds and is used by your other abilities.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "damage": 0.1,
+                    "dsrc": "APSP2",
+                    "id": 1627,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_corruptcha1",
+                    "cd": 2500
+                },
+                {
+                    "icon": "i,i,i,i,i,uchronoA2",
+                    "nam": "Hourglass Reversal",
+                    "mp": 30,
+                    "anim": "Castgood",
+                    "auraCheck": "Temporal Rift",
+                    "desc": "Reverses time to heal you. Heal is increased by stacks of Temporal Rift and consumes those stacks.",
+                    "forceResult": "hit",
+                    "isOK": true,
+                    "range": 3000,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": -3,
+                    "dsrc": "Spell1",
+                    "id": 1628,
+                    "ref": "a2",
+                    "tgt": "s",
+                    "typ": "pm",
+                    "strl": "sp_corruptcha2",
+                    "cd": 8000
+                },
+                {
+                    "id": 1629,
+                    "icon": "i,i,i,i,i,uchronoA3",
+                    "ref": "a3",
+                    "nam": "Distortion Through Time",
+                    "anim": "Cast3",
+                    "mp": 20,
+                    "desc": "Applies Corruption Through Time. Corruption Through Time increases all damage you do by 20% for 10 seconds. Doesn't stack.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_corruptcha3",
+                    "cd": 6000
+                },
+                {
+                    "icon": "i,i,i,i,i,uchronoA4",
+                    "mp": 35,
+                    "nam": "Temporal Collapse",
+                    "anim": "Attack4",
+                    "desc": "If Temporal Rift is active, deal damage to your target based on the amount you've dealt in up to the past 10 seconds while it was active. Damage scales with each stack of Temporal Rift and consumes those stacks",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 301,
+                    "fx": "w",
+                    "damage": 1.3,
+                    "dsrc": "Chrono2",
+                    "id": 1630,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "strl": "sp_corruptcha4",
+                    "cd": 15000
+                }
+            ]
+        }
+    },
+    "Vampire Lord": {
+        "uid": 10099,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "Vampire Lords rule over their sanguine servants. Feasting on the blood of mortals, they can live forever. Don't show one a mirror though, or you might not like what you don't see.",
+        "sClassCat": "M3",
+        "aMRM": [
+            "Vampire Lords gain mana from all hits landed in combat, and especially on critical hits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "sClassName": "Vampire Lord",
+        "auras": [
+            {
+                "nam": "Sanguine Lord",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 13,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Ageless",
+                "e": [
+                    {
+                        "val": 1.3,
+                        "id": 673,
+                        "sta": "INT",
+                        "typ": "*"
+                    },
+                    {
+                        "val": -0.2,
+                        "id": 483,
+                        "sta": "tcr",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Pure Blood",
+                "e": [
+                    {
+                        "val": 0.15,
+                        "id": 13,
+                        "sta": "cao",
+                        "typ": "+"
+                    }
+                ]
+            }
+        ],
+        "tInf": "p:10099",
+        "actions": {
+            "passive": [
+                {
+                    "id": 1305,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Sanguine Lord",
+                    "desc": "Damage increased by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1306,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Ageless",
+                    "desc": "Intellect increased by 30%, Crit Rate reduced by 20%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 1304,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Pure Blood",
+                    "desc": "Damage increased by 15%",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplordaa",
+                    "mp": 0,
+                    "anim": "FistweaponAttack1",
+                    "nam": "Slash",
+                    "tgtMax": 3,
+                    "desc": "You slash out at up to 3 targets with your extended Vampire claws, dealing 60% hybrid damage to each.",
+                    "isOK": true,
+                    "range": 808,
+                    "fx": "w",
+                    "damage": 0.6,
+                    "dsrc": "APSP2",
+                    "id": 1300,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "strl": "sp_vamplordaa",
+                    "cd": 2500
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplorda2",
+                    "nam": "Sonar Scream",
+                    "anim": "Psychic2",
+                    "mp": 0,
+                    "tgtMax": 3,
+                    "desc": "Applies 'Deafened' debuff to up to three enemies, increasing the damage they take by 30% for 8 seconds. If you have 'Aspect of The Bat', applies 'Sonar Senses' buff to yourself, increasing your hit chance by 50% for 8 seconds. Can't miss.\r\nDoes not apply 'Deafened' while 'Aspect of The Bat' is active.",
+                    "forceResult": "hit",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "m",
+                    "id": 1307,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplorda1",
+                    "mp": 25,
+                    "anim": "FistweaponAttack2",
+                    "nam": "Devour Blood",
+                    "tgtMax": 3,
+                    "desc": "Deals damage to up to three enemies and heals for some of the damage dealt. Applies 'Blood Loss' debuff to your enemies, reducing damage done by 50% for 5 seconds. Does not apply 'Blood Loss' while 'Aspect of The Bat' is active.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 0.35,
+                    "dsrc": "Vamp1",
+                    "id": 1303,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "p",
+                    "DmgFct": 2,
+                    "strl": "sp_vamplorda1",
+                    "cd": 5000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplorda3",
+                    "mp": 25,
+                    "anim": "FistweaponAttack1,FistweaponAttack2",
+                    "nam": "Ghoul Gouge",
+                    "tgtMax": 3,
+                    "desc": "Deals damage to up to three targets and applies 'Gouged' debuff to your enemies, dealing damage over 12 seconds. Does not apply 'Gouged' while 'Aspect of The Bat' is active.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 1.07,
+                    "dsrc": "APSP2",
+                    "id": 1302,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "pm",
+                    "strl": "sp_vamplorda3",
+                    "cd": 8000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "vamplorda4",
+                    "nam": "Aspect of The Bat",
+                    "anim": "Cast2",
+                    "mp": 25,
+                    "tgtMax": 1,
+                    "desc": "You take on the aspects of a bat! Your haste and crit chance increase by 500% for 15 seconds but you deal 45% less physical damage, 45% all outgoing damage, take 50% more damage, and no longer apply debuffs to your enemies.",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true,
+                    "range": 3000,
+                    "fx": "w",
+                    "id": 1301,
+                    "ref": "a4",
+                    "tgt": "s",
+                    "typ": "ma",
+                    "cd": 15000
+                }
+            ]
+        }
+    },
+    "The Collector": {
+        "uid": 4683,
+        "iCP": 302500,
+        "cmd": "sAct",
+        "sDesc": "The collector took a vindicator and modified it. Now that he is gone it is yours.",
+        "sClassCat": "C1",
+        "aMRM": [
+            "The Collector gains mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat\r",
+            "-Are under the effects of Mana Store (restores 10 mana every second)"
+        ],
+        "sClassName": "The Collector",
+        "auras": [
+            {
+                "nam": "I've Got A Fang",
+                "e": [
+                    {
+                        "val": 0.2,
+                        "id": 1,
+                        "sta": "cao",
+                        "typ": "+"
+                    },
+                    {
+                        "val": 0.1,
+                        "id": 19,
+                        "sta": "thi",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "& Hot Cha",
+                "e": [
+                    {
+                        "val": 0.25,
+                        "id": 12,
+                        "sta": "tha",
+                        "typ": "+"
+                    }
+                ]
+            },
+            {
+                "nam": "Vigilette Overload"
+            }
+        ],
+        "tInf": "p:4683",
+        "actions": {
+            "passive": [
+                {
+                    "id": 865,
+                    "ref": "p1",
+                    "icon": "isp2",
+                    "nam": "Aggressive",
+                    "desc": "Outgoing damage increased by 20% and Hit Chance increased by 10%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 864,
+                    "ref": "p2",
+                    "icon": "isp2",
+                    "nam": "Relentless",
+                    "desc": "Haste increased by 25%.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                },
+                {
+                    "id": 197,
+                    "ref": "p3",
+                    "icon": "isp2",
+                    "nam": "Vigilette Overload",
+                    "desc": "Your skills have a 1% chance to apply Vigilette Overload, granting you unlimited mana and massive healing for 8 seconds.",
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "isOK": true,
+                    "fx": "m",
+                    "tgt": "s",
+                    "typ": "passive",
+                    "cd": 60000
+                }
+            ],
+            "active": [
+                {
+                    "tgtMin": 1,
+                    "icon": "iwd1",
+                    "mp": 0,
+                    "anim": "Attack1",
+                    "nam": "Auto Attack",
+                    "tgtMax": 1,
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 301,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "AP2",
+                    "id": 2432,
+                    "ref": "aa",
+                    "auto": true,
+                    "tgt": "h",
+                    "typ": "aa",
+                    "hasPassives": true,
+                    "cd": 2000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ims2,iwsword",
+                    "mp": 15,
+                    "anim": "Cast3",
+                    "nam": "Dimensional Rift",
+                    "tgtMax": 1,
+                    "desc": "Swing your weapon through time and space to attack your target, applying a 6 second DoT that also reduces their Haste and Dodge by 20%. \r\n\r\nIf Transmuted, applies Mana Store, restoring 10 mana every second for 6 seconds.",
+                    "isOK": true,
+                    "auras": [
+                        {}
+                    ],
+                    "range": 808,
+                    "fx": "m",
+                    "damage": 0.5,
+                    "dsrc": "SP2",
+                    "id": 861,
+                    "ref": "a1",
+                    "tgt": "h",
+                    "typ": "m",
+                    "hasPassives": true,
+                    "cd": 5000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ied2,isi1",
+                    "mp": 15,
+                    "anim": "Cast1",
+                    "nam": "Particle Drain",
+                    "tgtMax": 1,
+                    "desc": "Absorb your enemies life force, healing yourself for a portion of the damage dealt. \r\n\r\nIf Transmuted, applies What's Yours, reducing your target's Damage Resistance by 20%, then applies Is Mine, increasing your Damage Resistance by 20%. Both effects last 6 seconds.",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "Leech3",
+                    "id": 866,
+                    "ref": "a2",
+                    "tgt": "h",
+                    "typ": "m",
+                    "hasPassives": true,
+                    "strl": "sp_ed1",
+                    "cd": 2500
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "ims4,imh1",
+                    "mp": 20,
+                    "anim": "Cast2",
+                    "nam": "Transmutation",
+                    "tgtMax": 1,
+                    "desc": "Petrifies your foe for 3 seconds and applies Transmuted to yourself, a 5 second DoT. If your target is immune to being petrified, applies Countermeasures, increasing your Damage Resistance by 40% for 10 seconds.",
+                    "isOK": true,
+                    "range": 401,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "m",
+                    "damage": 0.7,
+                    "dsrc": "SP2",
+                    "id": 862,
+                    "ref": "a3",
+                    "tgt": "h",
+                    "typ": "m",
+                    "hasPassives": true,
+                    "strl": "sp_ed1",
+                    "cd": 10000
+                },
+                {
+                    "tgtMin": 1,
+                    "icon": "iel2",
+                    "nam": "Artificial Environment",
+                    "mp": 30,
+                    "anim": "Cast1",
+                    "auraCheck": "Transmuted",
+                    "tgtMax": 1,
+                    "desc": "Create a tiny SUN causing massive damage. If Transmutated, it is consumed to deal 25% increased damage. Also applies Artifical Sun to your target, a 10 second DoT that also reduces their outgoing damage by 30%. ",
+                    "isOK": true,
+                    "range": 808,
+                    "auras": [
+                        {}
+                    ],
+                    "fx": "w",
+                    "damage": 10,
+                    "dsrc": "Spell1",
+                    "id": 863,
+                    "ref": "a4",
+                    "tgt": "h",
+                    "typ": "m",
+                    "hasPassives": true,
+                    "strl": "sp_sun",
+                    "cd": 10000
                 }
             ]
         }

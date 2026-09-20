@@ -1,4 +1,6 @@
 import json
+import sys
+
 
 def parse_and_update_classes(raw_string: str, json_file: str = "classes.json"):
     # Split the pipe-delimited raw payload string into individual JSON strings
@@ -58,5 +60,5 @@ def parse_and_update_classes(raw_string: str, json_file: str = "classes.json"):
 
 if __name__ == "__main__":
     while True:
-        raw_input = input("Input class data: ").strip()
+        raw_input = input("Big JSON here: ").strip()
         parse_and_update_classes(raw_input)
