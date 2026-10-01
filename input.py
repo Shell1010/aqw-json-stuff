@@ -118,4 +118,4 @@ def parse_and_update_classes_from_file(file_path: str, json_file: str = "classes
 if __name__ == "__main__":
     # while True:
     #     raw_input = input("Big JSON here: ").strip()
-    parse_and_update_classes_from_file("cc.json")
+    parse_and_update_classes_from_file("rogue.json")

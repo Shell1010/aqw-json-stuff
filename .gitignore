@@ -1,1 +1,6 @@
 .venv
+src
+__pycache__/
+pyproject.toml
+README.md
+uv.lock

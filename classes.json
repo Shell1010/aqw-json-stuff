@@ -10814,7 +10814,7 @@
         }
     },
     "Rogue": {
-        "uid": 23410,
+        "uid": 37965,
         "iCP": 302500,
         "cmd": "sAct",
         "sDesc": "Rogues are quick-moving, deadly fighters. They prey on any weakness in their opponent, while using poisons and evasive footwork to their advantage.",
@@ -10827,215 +10827,179 @@
         "sClassName": "Rogue",
         "auras": [
             {
-                "nam": "Scent Tracking",
                 "e": [
                     {
-                        "val": 0.15,
-                        "id": 210,
-                        "sta": "tcr",
-                        "typ": "+"
-                    },
-                    {
-                        "val": 0.15,
-                        "id": 781,
-                        "sta": "tha",
-                        "typ": "+"
+                        "id": 41,
+                        "sta": "tdo",
+                        "typ": "+",
+                        "val": 0.15
                     }
-                ]
+                ],
+                "nam": "Elusive"
             },
             {
-                "nam": "Thick Fur",
                 "e": [
                     {
-                        "val": -0.15,
-                        "id": 865,
-                        "sta": "cai",
-                        "typ": "+"
+                        "id": 37,
+                        "sta": "tcr",
+                        "typ": "+",
+                        "val": 0.15
+                    },
+                    {
+                        "id": 19,
+                        "sta": "thi",
+                        "typ": "+",
+                        "val": 0.1
                     }
-                ]
+                ],
+                "nam": "Incisive"
             }
         ],
-        "tInf": "p:23410",
+        "tInf": "p:37965",
         "actions": {
-            "passive": [
-                {
-                    "id": 1578,
-                    "ref": "p1",
-                    "icon": "isp2",
-                    "nam": "Lean Muscle",
-                    "desc": "Haste increased by 15% and crit chance increased by 15%.",
-                    "auras": [
-                        {}
-                    ],
-                    "range": 301,
-                    "isOK": true,
-                    "fx": "m",
-                    "tgt": "s",
-                    "typ": "passive",
-                    "cd": 60000
-                },
-                {
-                    "id": 1579,
-                    "ref": "p2",
-                    "icon": "isp2",
-                    "nam": "Thick Fur",
-                    "desc": "Damage taken reduced by 15%.",
-                    "auras": [
-                        {}
-                    ],
-                    "range": 301,
-                    "isOK": true,
-                    "fx": "m",
-                    "tgt": "s",
-                    "typ": "passive",
-                    "cd": 60000
-                }
-            ],
             "active": [
                 {
-                    "id": 1573,
-                    "icon": "iwd1",
-                    "ref": "aa",
-                    "mp": 0,
-                    "nam": "Auto attack",
                     "anim": "Attack1,Attack2",
-                    "desc": "Double click a monster to start Auto Attacking it. This is a basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
-                    "isOK": true,
-                    "range": 301,
-                    "fx": "m",
-                    "damage": 0.7,
                     "auto": true,
+                    "cd": 1500,
+                    "damage": 1.75,
+                    "desc": "Double click a monster to start Auto Attacking it. This is a very unique attack that deals rapid, consistent damage based on your attack power instead of your weapon damage.",
+                    "dsrc": "AP1",
+                    "fx": "m",
+                    "icon": "iwd1",
+                    "id": 1200,
+                    "isOK": true,
+                    "mp": 0,
+                    "nam": "Auto Attack",
+                    "range": 301,
+                    "ref": "aa",
                     "tgt": "h",
-                    "typ": "aa",
-                    "dsrc": "AP2",
-                    "cd": 2000
+                    "typ": "aa"
                 },
                 {
-                    "tgtMin": 1,
-                    "icon": "ime2",
-                    "mp": 15,
-                    "anim": "Thrash",
-                    "nam": "Savagery",
-                    "tgtMax": 1,
-                    "desc": "With the strength and agility of a Lycan, even a clumsy flail in an attempt to hit something becomes a nearly inescapable barrage. You tap into your beastly nature and apply one stack of Instinct for 6 seconds, increasing physical outgoing damage by 5% per stack, stacks to 5. Also applies a stacking HoT for 15 seconds.",
-                    "forceResult": "hit",
-                    "isOK": true,
-                    "range": 401,
+                    "anim": "Attack4",
                     "auras": [
-                        {},
                         {}
                     ],
-                    "fx": "m",
-                    "damage": 1.3,
+                    "cd": 3000,
+                    "damage": 0.8,
+                    "desc": "Instantly deals weapon damage and applies Viper's Kiss, a poison dealing additional damage over 7 seconds.",
                     "dsrc": "AP2",
-                    "id": 1576,
+                    "fx": "m",
+                    "icon": "isp1",
+                    "id": 162,
+                    "isOK": true,
+                    "mp": 10,
+                    "nam": "Viper's Kiss",
+                    "range": 505,
                     "ref": "a1",
                     "tgt": "h",
-                    "typ": "p",
-                    "hasPassives": true,
-                    "cd": 4000
+                    "typ": "p"
                 },
                 {
-                    "tgtMin": 1,
-                    "icon": "ipn1",
-                    "mp": 0,
-                    "anim": "Psychic2",
-                    "nam": "Thrill of Battle",
-                    "tgtMax": 1,
-                    "desc": "The thrill of battle gives you a rush. If Keystone Predator is active, applies Endless Hunt for 10 seconds, which increases your crit chance, crit damage, and dodge chance by 15%.",
-                    "isOK": true,
+                    "anim": "Bow",
                     "auras": [
                         {}
                     ],
-                    "range": 401,
+                    "cd": 16000,
+                    "desc": "Increases your Haste and Dodge by 30% for 7 seconds.",
                     "fx": "m",
-                    "damage": 0.8,
-                    "dsrc": "AP2",
-                    "id": 1575,
+                    "icon": "imp1,imf1",
+                    "id": 165,
+                    "isOK": true,
+                    "mp": 20,
+                    "nam": "Footwork",
+                    "range": 301,
                     "ref": "a2",
-                    "tgt": "h",
-                    "typ": "p",
-                    "cd": 6000
+                    "tgt": "s",
+                    "typ": "p"
                 },
                 {
-                    "tgtMin": 1,
-                    "icon": "iipet",
-                    "mp": 30,
-                    "anim": "FlipAttack",
-                    "nam": "Pouncing Strike",
-                    "tgtMax": 1,
-                    "desc": "With your new legs you send a mighty leaping kick to the head of your enemy, causing them, at the very least, to become really dizzy, reducing Critical Strike Chance by 50% and Dodge Chance by 30% for 20 seconds. If the opponent was stunned by Howl of Terror, increases their incoming damage by either 15%, 20%, 25%, or 30% proportional to the length of their stun.",
-                    "isOK": true,
+                    "anim": "Attack3",
                     "auras": [
-                        {},
-                        {},
-                        {},
-                        {},
                         {}
                     ],
-                    "range": 808,
-                    "fx": "m",
-                    "damage": 2.8,
+                    "cd": 20000,
+                    "damage": 0.8,
+                    "desc": "Deals moderate damage and applies Concealed Blade for 7 seconds, causing your attacks to deal bonus damage to targets below 40% of their max HP, with the bonus damage increasing the closer they are to death.",
                     "dsrc": "AP2",
-                    "id": 1574,
+                    "fx": "m",
+                    "icon": "iwdagger",
+                    "id": 164,
+                    "isOK": true,
+                    "mp": 20,
+                    "nam": "Stiletto",
+                    "range": 301,
                     "ref": "a3",
                     "tgt": "h",
-                    "typ": "p",
-                    "cd": 20000
+                    "typ": "p"
                 },
                 {
-                    "tgtMin": 1,
-                    "icon": "ime1",
-                    "nam": "Howl of Terror",
-                    "mp": 20,
-                    "anim": "Psychic1",
-                    "tgtMax": 1,
-                    "desc": "You let loose a blood-curdling call to the sky and your opponent, shaking them to their core. Applies Keystone Predator, which increases outgoing damage by 15% for 15 seconds. Also applies one of four stuns, lasting either 2, 3, 4, or 6 seconds.",
-                    "isOK": true,
-                    "range": 808,
-                    "auras": [
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {},
-                        {}
-                    ],
+                    "anim": "Stab",
+                    "auraCheck": "Viper's Kiss",
+                    "cd": 4000,
+                    "damage": 1.25,
+                    "desc": "Deals more damage the closer Viper's Kiss is to expiring. ",
+                    "dsrc": "Thief2",
                     "fx": "m",
-                    "damage": 0,
-                    "randomLength": 15,
-                    "id": 1577,
+                    "icon": "iiclass,imc1",
+                    "id": 163,
+                    "isOK": true,
+                    "mp": 10,
+                    "nam": "Opportunity's Strike",
+                    "range": 301,
                     "ref": "a4",
                     "tgt": "h",
-                    "typ": "p",
-                    "Apply": 15,
-                    "randomAura": true,
-                    "cd": 12000
+                    "typ": "p"
                 },
                 {
-                    "ref": "i1",
-                    "icon": "icu1",
-                    "mp": 0,
                     "anim": "Cheer",
-                    "nam": "Potions",
+                    "cd": 60000,
                     "desc": "Equip a potion or scroll from your inventory to use it here.",
-                    "range": 808,
-                    "isOK": true,
                     "fx": "",
-                    "tgt": "f",
-                    "typ": "i",
+                    "icon": "icu1",
+                    "isOK": true,
+                    "mp": 0,
+                    "nam": "Potions",
+                    "range": 808,
+                    "ref": "i1",
                     "strl": "",
-                    "cd": 60000
+                    "tgt": "f",
+                    "typ": "i"
+                }
+            ],
+            "passive": [
+                {
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "desc": "Dodge increased by 15%.",
+                    "fx": "m",
+                    "icon": "isp2",
+                    "id": 113,
+                    "isOK": true,
+                    "nam": "Elusive",
+                    "range": 301,
+                    "ref": "p1",
+                    "tgt": "s",
+                    "typ": "passive"
+                },
+                {
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "desc": "Hit Chance increased by 10% and Crit Chance increased by 15%.",
+                    "fx": "m",
+                    "icon": "isp2",
+                    "id": 114,
+                    "isOK": true,
+                    "nam": "Incisive",
+                    "range": 301,
+                    "ref": "p2",
+                    "tgt": "s",
+                    "typ": "passive"
                 }
             ]
         }
