@@ -1485,7 +1485,7 @@
         }
     },
     "Archivist of Time": {
-        "uid": 16846,
+        "uid": 29340,
         "iCP": 302500,
         "cmd": "sAct",
         "sDesc": "The Archivist serves as the observer of the flow, holding the power to revise timelines as they deviate.",
@@ -1527,7 +1527,7 @@
                 ]
             }
         ],
-        "tInf": "p:16846",
+        "tInf": "p:29340",
         "actions": {
             "active": [
                 {
@@ -1565,7 +1565,7 @@
                     "nam": "The First Index",
                     "typ": "m",
                     "ref": "a1",
-                    "desc": "Peer into the library of time, invoking The First Index if you've Inscribed Lore, which is used to apply damaging spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: This skill deals increased damage\r\nThe Second Index: Acutance - +50% Crit Chance for 12s\r\nThe Third Index: Fortification - +75% END & -25% mana costs for 12s",
+                    "desc": "Peer into the library of time, invoking The First Index if you've Inscribed Lore, which is used to apply damaging spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: This skill deals increased damage\r\nThe Second Index: Acutance - +50% Crit Chance for 12s\r\nThe Third Index: Fortification - +75% END & -25% mana costs for 24s",
                     "tgt": "h",
                     "tgtMax": 1,
                     "fx": "w",
@@ -1593,7 +1593,7 @@
                     "nam": "The Second Index",
                     "typ": "m",
                     "ref": "a2",
-                    "desc": "Peer into the library of time, invoking The Second Index if you've Inscribed Lore, which is used to apply enchanting spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: Splotched - DoT based on your target's current HP percentage for 6s\r\nThe Second Index: Vehemency - +30% Physical & Magical Damage for 12s\r\nThe Third Index: Resiliency - +50% Damage Resistance for 12s",
+                    "desc": "Peer into the library of time, invoking The Second Index if you've Inscribed Lore, which is used to apply enchanting spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: Splotched - DoT based on your target's current HP percentage for 6s\r\nThe Second Index: Vehemency - +40% Physical & Magical Damage for 12s\r\nThe Third Index: Resiliency - +25% Damage Resistance for 24s",
                     "tgt": "h",
                     "tgtMax": 1,
                     "fx": "w",
@@ -1622,7 +1622,7 @@
                     "nam": "The Third Index",
                     "typ": "m",
                     "ref": "a3",
-                    "desc": "Peer into the library of time, invoking the Third Index if you've Inscribed Lore, which is used to apply protection spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: Page Turned - Every successive Lorebook of Beginnings does more damage for 24s\r\nThe Second Index: Superpower - +30% INT/STR & 15% Luck for 12s\r\nThe Third Index: Rewind - HoT for 12s",
+                    "desc": "Peer into the library of time, invoking the Third Index if you've Inscribed Lore, which is used to apply protection spells. Applies a different effect based on your currently active Index.\r\n\r\nThe First Index: Page Turned - Every successive Lorebook of Beginnings does more damage for 24s\r\nThe Second Index: Superpower - +30% INT, STR & Luck for 12s\r\nThe Third Index: Rewind - HoT for 24s",
                     "tgt": "h",
                     "tgtMax": 1,
                     "fx": "w",
@@ -1657,7 +1657,7 @@
                     "strl": "sp_Archivista4",
                     "range": 3000,
                     "mp": 0,
-                    "cd": 60000,
+                    "cd": 50000,
                     "anim": "Cast3",
                     "icon": "i,i,i,i,i,AoTa4",
                     "auras": [
