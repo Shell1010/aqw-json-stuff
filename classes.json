@@ -32285,5 +32285,472 @@
                 }
             ]
         }
+    },
+    "Debris Highlord": {
+        "cmd": "sAct",
+        "uid": 3512,
+        "sClassName": "Debris Highlord",
+        "sClassCat": "M1",
+        "iCP": 302500,
+        "sDesc": "Only an insane, manical, and absolute Fool would dare reconstruct one of Nulgath's Void Highlords!\r\n",
+        "aMRM": [
+            "Debris Highlords gain mana from all hits landed in combat, and especially on crits.  The amount depends on damage relative to *their own* HP total"
+        ],
+        "tInf": "p:3512",
+        "auras": [
+            {
+                "nam": "Relentless Onslaught",
+                "e": [
+                    {
+                        "id": 2307,
+                        "typ": "+",
+                        "sta": "thi",
+                        "val": 0.2
+                    },
+                    {
+                        "id": 2308,
+                        "typ": "+",
+                        "sta": "tcr",
+                        "val": 0.2
+                    }
+                ]
+            },
+            {
+                "nam": "Tremble in Fear",
+                "e": [
+                    {
+                        "id": 2309,
+                        "typ": "+",
+                        "sta": "cai",
+                        "val": -0.2
+                    }
+                ]
+            },
+            {
+                "nam": "The Warlord",
+                "e": [
+                    {
+                        "id": 2310,
+                        "typ": "*",
+                        "sta": "END",
+                        "val": 1.5
+                    }
+                ]
+            }
+        ],
+        "actions": {
+            "active": [
+                {
+                    "id": 2948,
+                    "nam": "Contract",
+                    "typ": "aa",
+                    "ref": "aa",
+                    "desc": "Seal your opponent's fate. If Shackled is active, applies Soul Fend to yourself, a HoT for 5 seconds, stacks to 5. If Unshackled is active, applies Soul Breach to your target, a DoT for 5 seconds, stacks to 5.",
+                    "tgt": "h",
+                    "fx": "w",
+                    "strl": "sp_DVHLaa",
+                    "damage": 1.25,
+                    "dsrc": "AP2",
+                    "range": 3000,
+                    "mp": 0,
+                    "cd": 2300,
+                    "anim": "Cast1",
+                    "icon": "i,i,i,i,i,DVHLaa",
+                    "auras": [
+                        {},
+                        {}
+                    ],
+                    "auto": true,
+                    "hasPassives": true,
+                    "isOK": true
+                },
+                {
+                    "id": 2950,
+                    "nam": "Shackle",
+                    "typ": "p",
+                    "ref": "a1",
+                    "desc": "Binds your soul for protection, dealing damage while reducing your incoming damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Unshackled)",
+                    "tgt": "h",
+                    "fx": "w",
+                    "strl": "sp_DVHLa1",
+                    "damage": 1.25,
+                    "dsrc": "BTX",
+                    "range": 3000,
+                    "mp": 0,
+                    "cd": 4000,
+                    "anim": "Cast1",
+                    "icon": "i,i,i,i,i,DVHLa1",
+                    "auras": [
+                        {},
+                        {},
+                        {}
+                    ],
+                    "DmgFct": 2,
+                    "xDmg": 0.2,
+                    "forceResult": "crit",
+                    "isOK": true
+                },
+                {
+                    "id": 2949,
+                    "nam": "Highlord's Gaze",
+                    "typ": "p",
+                    "ref": "a2",
+                    "desc": "Strike fear into your opponent with the eyes of the Void, dealing damage and feeding off their despair, healing you. Has a 30% chance to stun and applies Congealed, reducing their Hit Chance, Haste, and Dodge by 20% for 6 seconds.",
+                    "tgt": "h",
+                    "fx": "w",
+                    "strl": "sp_DVHLa2",
+                    "damage": 1.3,
+                    "dsrc": "Leech1",
+                    "range": 3000,
+                    "mp": 20,
+                    "cd": 5000,
+                    "anim": "Cast1",
+                    "icon": "i,i,i,i,i,DVHLa2",
+                    "auras": [
+                        {},
+                        {},
+                        {}
+                    ],
+                    "isOK": true
+                },
+                {
+                    "id": 2951,
+                    "nam": "Unshackle",
+                    "typ": "p",
+                    "ref": "a3",
+                    "desc": "Releases your soul for destruction, dealing damage while increasing your outgoing damage by 50% for 15 seconds. Also applies Soul Void, increasing your Haste, HoT power, and DoT power by 30% for 12 seconds. Always crits and can't miss. Costs 20% of your maximum health. (Replaces Shackled)",
+                    "tgt": "h",
+                    "fx": "w",
+                    "strl": "sp_DVHLa3",
+                    "damage": 0.85,
+                    "dsrc": "BTX",
+                    "range": 3000,
+                    "mp": 0,
+                    "cd": 4000,
+                    "anim": "Cast2",
+                    "icon": "i,i,i,i,i,DVHLa3",
+                    "auras": [
+                        {},
+                        {},
+                        {}
+                    ],
+                    "DmgFct": 2,
+                    "xDmg": 0.2,
+                    "forceResult": "crit",
+                    "isOK": true
+                },
+                {
+                    "id": 2952,
+                    "nam": "Armageddon",
+                    "typ": "p",
+                    "ref": "a4",
+                    "desc": "Spawn a portal straight to the Void itself to call a mass amount of swords to do your bidding, dealing cataclysmic damage. Applies Arbiter's Wrath, increasing your Crit Damage by 75% for 12 seconds. Also applies Kneel Before the Nation, increasing your outgoing damage and reducing your incoming damage by 50% for 12 seconds. At rank 10, you sacrifice your opponent\u2019s soul to the Void, increasing their incoming damage by 5% for 20 seconds, stacks to 10.",
+                    "tgt": "h",
+                    "fx": "w",
+                    "strl": "sp_DVHLa4",
+                    "damage": 4.2,
+                    "dsrc": "AP2",
+                    "range": 3000,
+                    "mp": 50,
+                    "cd": 15000,
+                    "anim": "Cast2",
+                    "icon": "i,i,i,i,i,DVHLa4",
+                    "auras": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ],
+                    "hasPassives": true,
+                    "isOK": true
+                },
+                {
+                    "nam": "Potions",
+                    "ref": "i1",
+                    "desc": "Equip a potion or scroll from your inventory to use it here.",
+                    "typ": "i",
+                    "fx": "",
+                    "strl": "",
+                    "tgt": "f",
+                    "range": 808,
+                    "mp": 0,
+                    "cd": 60000,
+                    "anim": "Cheer",
+                    "icon": "icu1",
+                    "isOK": true
+                }
+            ],
+            "passive": [
+                {
+                    "id": 2953,
+                    "nam": "Relentless Onslaught",
+                    "typ": "passive",
+                    "ref": "p1",
+                    "desc": "Increases Hit Chance and Crit Chance by 20%",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,DVHLp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 2954,
+                    "nam": "Tremble in Fear",
+                    "typ": "passive",
+                    "ref": "p2",
+                    "desc": "Incoming damage reduced by 20%",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,DVHLp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 2955,
+                    "nam": "Undying Highlord",
+                    "typ": "passive",
+                    "ref": "p3",
+                    "desc": "Starting at rank 1, all skills (excluding Contract) have a 20% chance to apply Insolent Fools, increasing your Endurance by 30% while healing you over time for 3 seconds. At rank 10, Undying Highlord permanently increases your Endurance by 50% and Armageddon increases your opponent\u2019s incoming damage by 5% for 20 seconds, stacks to 10.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,DVHLp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                }
+            ]
+        }
+    },
+    "Defender": {
+        "cmd": "sAct",
+        "uid": 3512,
+        "sClassName": "Defender",
+        "sClassCat": "C2",
+        "iCP": 302500,
+        "sDesc": "As a Defender, your selfless spirit defends others in combat from all threats across lore, but in times of peril you can shine above the rest.",
+        "aMRM": [
+            "Defenders gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "tInf": "p:3512",
+        "auras": [
+            {
+                "nam": "Halo of Protection",
+                "e": [
+                    {
+                        "id": 1034,
+                        "typ": "+",
+                        "sta": "cpi",
+                        "val": -0.2
+                    }
+                ]
+            },
+            {
+                "nam": "Selfless Decree",
+                "e": [
+                    {
+                        "id": 1057,
+                        "typ": "+",
+                        "sta": "cdo",
+                        "val": 0.15
+                    }
+                ]
+            },
+            {
+                "nam": "Energizing Rally"
+            }
+        ],
+        "actions": {
+            "active": [
+                {
+                    "id": 1732,
+                    "nam": "Stanced Strike",
+                    "typ": "aa",
+                    "ref": "aa",
+                    "desc": "Stick em with the pointy end of your shield.",
+                    "tgt": "h",
+                    "tgtMax": 1,
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "AP2",
+                    "range": 301,
+                    "mp": 0,
+                    "cd": 2000,
+                    "anim": "Attack1",
+                    "icon": "iiclass2",
+                    "tgtMin": 1,
+                    "auto": true,
+                    "isOK": true
+                },
+                {
+                    "id": 1733,
+                    "nam": "Shield's Blessing",
+                    "typ": "pm",
+                    "ref": "a1",
+                    "desc": "Shield your allies and share your power! Increases Physical Resistance by 25% and outgoing damage and Haste by 10% for yourself and up to 6 friendly targets for 10 seconds.",
+                    "tgt": "f",
+                    "tgtMax": 7,
+                    "fx": "m",
+                    "range": 3000,
+                    "mp": 10,
+                    "cd": 6000,
+                    "anim": "Cast3",
+                    "icon": "iiclass,ieh1",
+                    "auras": [
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "isOK": true
+                },
+                {
+                    "id": 1734,
+                    "nam": "Infernal Shield Slam",
+                    "typ": "pm",
+                    "ref": "a2",
+                    "desc": "Strike back at your foe using a portion of their own power and set them Aflame, dealing damage over time for 6 seconds, stacking to 5. Additionally, applies Infernal Shield, increasing your outgoing damage by 3% for 6 seconds, stacks to 5.",
+                    "tgt": "h",
+                    "tgtMax": 1,
+                    "fx": "m",
+                    "damage": 2,
+                    "dsrc": "AP2",
+                    "range": 404,
+                    "mp": 8,
+                    "cd": 3000,
+                    "anim": "Attack4",
+                    "icon": "iwshield,ief2",
+                    "auras": [
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "forceresult": "hit",
+                    "isOK": true
+                },
+                {
+                    "id": 1735,
+                    "nam": "Shield Veil",
+                    "typ": "pm",
+                    "ref": "a3",
+                    "desc": "Coat yourself and up to 6 friendly targets in a layer of protection, increasing their Physical Resistance by 40% for 4 seconds. Also applies Defender's Pavise, increasing your Physical Resistance by 20% for 10 seconds. If you have Infernal Shield stacks, they are consumed to apply Shield's Veil, a small HoT for 10 seconds.",
+                    "tgt": "f",
+                    "tgtMax": 7,
+                    "fx": "m",
+                    "dsrc": "AP1",
+                    "range": 3000,
+                    "mp": 15,
+                    "cd": 10000,
+                    "anim": "Cast3",
+                    "icon": "iwshield,ieh1",
+                    "auras": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "isOK": true
+                },
+                {
+                    "id": 1736,
+                    "nam": "Shield of Wrath",
+                    "typ": "pm",
+                    "ref": "a4",
+                    "desc": "Vent your accumulated wrath and strike your foe with fervor, dealing high damage based on how many stacks of Infernal Shield you have (but does not consume stacks).",
+                    "tgt": "h",
+                    "tgtMax": 1,
+                    "fx": "m",
+                    "damage": 2,
+                    "dsrc": "Spell1",
+                    "range": 404,
+                    "mp": 10,
+                    "cd": 6000,
+                    "anim": "Thrash",
+                    "icon": "iwarmor,iwd2",
+                    "tgtMin": 1,
+                    "auraCheck": "Infernal Shield",
+                    "isOK": true
+                },
+                {
+                    "nam": "Potions",
+                    "ref": "i1",
+                    "desc": "Equip a potion or scroll from your inventory to use it here.",
+                    "typ": "i",
+                    "fx": "",
+                    "strl": "",
+                    "tgt": "f",
+                    "range": 808,
+                    "mp": 0,
+                    "cd": 60000,
+                    "anim": "Cheer",
+                    "icon": "icu1",
+                    "isOK": true
+                }
+            ],
+            "passive": [
+                {
+                    "id": 1737,
+                    "nam": "Halo of Protection",
+                    "typ": "passive",
+                    "ref": "p1",
+                    "desc": "Physical Resistance increased by 20%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "iwshield",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 1738,
+                    "nam": "Selfless Decree",
+                    "typ": "passive",
+                    "ref": "p2",
+                    "desc": "HoT and DoT power increased by 15%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "iwshield",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 1739,
+                    "nam": "Energizing Rally",
+                    "typ": "passive",
+                    "ref": "p3",
+                    "desc": "Starting at rank 1, Shield's Blessing has a 20% chance to reduce you or your allies' mana costs by 100% for 3 seconds.",
+                    "tgt": "f",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "iwshield",
+                    "auras": [
+                        {}
+                    ],
+                    "look": true,
+                    "casterhas": "Shield's Blessing",
+                    "cd": 60000,
+                    "isOK": true
+                }
+            ]
+        }
     }
 }
