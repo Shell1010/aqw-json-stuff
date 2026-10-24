@@ -32752,5 +32752,270 @@
                 }
             ]
         }
+    },
+    "Kathool Adept": {
+        "cmd": "sAct",
+        "uid": 2189,
+        "sClassName": "Kathool Adept",
+        "sClassCat": "C2",
+        "iCP": 302500,
+        "sDesc": "You could not resist, and neither will they.",
+        "aMRM": [
+            "Kathool Adepts gain mana from all hits landed in combat, and especially on critical hits.  The amount depends on damage relative to *their own* HP total."
+        ],
+        "tInf": "p:2189",
+        "auras": [
+            {
+                "nam": "Bottom Feeder",
+                "e": [
+                    {
+                        "id": 1191,
+                        "typ": "*",
+                        "sta": "END",
+                        "val": 1.3
+                    },
+                    {
+                        "id": 215,
+                        "typ": "+",
+                        "sta": "cai",
+                        "val": -0.15
+                    }
+                ]
+            },
+            {
+                "nam": "Lord of the Depths",
+                "e": [
+                    {
+                        "id": 160,
+                        "typ": "*",
+                        "sta": "INT",
+                        "val": 1.2
+                    },
+                    {
+                        "id": 932,
+                        "typ": "+",
+                        "sta": "thi",
+                        "val": 0.2
+                    }
+                ]
+            },
+            {
+                "nam": "Symbiogenesis",
+                "e": [
+                    {
+                        "id": 65,
+                        "typ": "+",
+                        "sta": "tcr",
+                        "val": 0.25
+                    }
+                ]
+            }
+        ],
+        "actions": {
+            "active": [
+                {
+                    "id": 2911,
+                    "nam": "Nightmare Gaze",
+                    "typ": "aa",
+                    "ref": "aa",
+                    "desc": "Your opponent cannot resist your influence. Applies Madness to your target, reducing Crit Chance and Dodge by 10% + 0.8% per stack for 10 seconds, stacks to 50.",
+                    "tgt": "h",
+                    "tgtMax": 3,
+                    "fx": "w",
+                    "strl": "sp_kaaa",
+                    "damage": 0.35,
+                    "dsrc": "SP2",
+                    "range": 3000,
+                    "mp": 0,
+                    "cd": 2000,
+                    "anim": "Cast1",
+                    "icon": "i,i,i,i,i,Kathaa",
+                    "auras": [
+                        {},
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "auto": true,
+                    "isOK": true
+                },
+                {
+                    "id": 2912,
+                    "nam": "Tentacle Slam",
+                    "typ": "m",
+                    "ref": "a1",
+                    "desc": "Summon a tentacle that slams down on your target. Applies Feeding, an HoT that increases your Damage Resistance by 5% for 10 seconds, stacks to 10. While you have 5 stacks of Feeding, gain Writhe, increasing Physical Resistance, Magical Resistance, and Healing Power by 25%.",
+                    "tgt": "h",
+                    "tgtMax": 3,
+                    "fx": "w",
+                    "strl": "sp_kaa1",
+                    "damage": 1,
+                    "dsrc": "Spell1",
+                    "range": 3000,
+                    "mp": 7,
+                    "cd": 3000,
+                    "anim": "Cast1:PetAttack",
+                    "icon": "i,i,i,i,i,Katha1",
+                    "auras": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "auraCheck": "Frenzied Feast",
+                    "forceResult": "noMiss",
+                    "hasPassives": true,
+                    "isOK": true
+                },
+                {
+                    "id": 2913,
+                    "nam": "Tidal",
+                    "typ": "m",
+                    "ref": "a2",
+                    "desc": "Send forth a Tidal Wave that crashes into your target, dealing critical damage and applying Red Tide, reducing Damage Resistance by 10% + 1% per stack of Madness on them for 10 seconds.",
+                    "tgt": "h",
+                    "tgtMax": 3,
+                    "fx": "w",
+                    "strl": "sp_kaa2",
+                    "damage": 0.5,
+                    "dsrc": "SP2",
+                    "range": 808,
+                    "mp": 15,
+                    "cd": 6000,
+                    "anim": "Cast2",
+                    "icon": "i,i,i,i,i,Katha2",
+                    "auras": [
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "addCrit": 10,
+                    "isOK": true
+                },
+                {
+                    "id": 2914,
+                    "nam": "Frenzied Feast",
+                    "typ": "m",
+                    "ref": "a3",
+                    "desc": "Manifest Tentacles from the Depths. If you have at least 5 Feeding stacks, they're consumed to apply Frenzied Feast, increasing Crit Damage and the damage of Tentacle Slam by 100%, and causing Nightmare Gaze to apply an additional stack of Madness. Lasts 5 seconds and stacks to 2. If you don't have Frenzied Feast, applies Bottom Feeder, doubling the number of Feeding stacks you gain and reducing Crit Damage by 200% for 3 seconds.",
+                    "tgt": "f",
+                    "tgtMax": 1,
+                    "fx": "m",
+                    "strl": "sp_kaa3",
+                    "range": 3000,
+                    "mp": 25,
+                    "cd": 1500,
+                    "anim": "Cast3:PetBuff",
+                    "icon": "i,i,i,i,i,Katha3",
+                    "auras": [
+                        {},
+                        {},
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "pet": 96204,
+                    "toggleAoe": "Symbiogenesis",
+                    "toggleAoeLimit": 7,
+                    "forceResult": "hit",
+                    "DmgFct": 2,
+                    "auraCheck": "Symbiogenesis",
+                    "isOK": true
+                },
+                {
+                    "id": 2915,
+                    "nam": "Call of Kathool",
+                    "typ": "m",
+                    "ref": "a4",
+                    "desc": "Call upon the God of the Depths, dealing unavoidable critical damage and applying effects based on your target's Madness stacks:\r\n\r\n5 - You Cannot Resist, reducing Physical and Magical Resistance by 25%\r\n20 - Come Join, reducing Outgoing Damage and Haste by 50%\r\n50 - Endless Nightmare, a DoT and reducing Hit Chance by 100%\r\n\r\nEffects last 15 seconds.",
+                    "tgt": "h",
+                    "tgtMax": 3,
+                    "fx": "w",
+                    "strl": "sp_kaa4",
+                    "damage": 0.5,
+                    "dsrc": "Pyro1",
+                    "range": 3000,
+                    "mp": 50,
+                    "cd": 18000,
+                    "anim": "Castgood",
+                    "icon": "i,i,i,i,i,Katha4",
+                    "auras": [
+                        {},
+                        {},
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "forceResult": "crit",
+                    "DmgFct": 2,
+                    "auraName": "Madness",
+                    "isOK": true
+                },
+                {
+                    "nam": "Potions",
+                    "ref": "i1",
+                    "desc": "Equip a potion or scroll from your inventory to use it here.",
+                    "typ": "i",
+                    "fx": "",
+                    "strl": "",
+                    "tgt": "f",
+                    "range": 808,
+                    "mp": 0,
+                    "cd": 60000,
+                    "anim": "Cheer",
+                    "icon": "icu1",
+                    "isOK": true
+                }
+            ],
+            "passive": [
+                {
+                    "id": 2916,
+                    "nam": "Risen",
+                    "typ": "passive",
+                    "ref": "p1",
+                    "desc": "Endurance increased by 30% and Damage Resistance increased by 15%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,Kathp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 2917,
+                    "nam": "Lord of the Depths",
+                    "typ": "passive",
+                    "ref": "p2",
+                    "desc": "Intellect and Hit Chance increased by 20%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,Kathp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 2918,
+                    "nam": "Symbiogenesis",
+                    "typ": "passive",
+                    "ref": "p3",
+                    "desc": "Crit Chance increased by 25%. At 10 stacks of Feeding, applies Symbiogenesis, causing your next Frenzied Feast to share Writhe with your allies for 10 seconds.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "i,i,i,i,i,Kathp1",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                }
+            ]
+        }
     }
 }
