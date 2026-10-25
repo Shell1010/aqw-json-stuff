@@ -33017,5 +33017,199 @@
                 }
             ]
         }
+    },
+    "Warrior": {
+        "cmd": "sAct",
+        "uid": 16796,
+        "sClassName": "Warrior",
+        "sClassCat": "M1",
+        "iCP": 302500,
+        "sDesc": "Warriors are quintessential melee fighters.  Simple, direct, and effective, they are masters of armed combat, and quite durable.",
+        "aMRM": [
+            "Warriors gain mana when they:\r",
+            "-Strike an enemy in combat (more effective on crits)\r",
+            "-Are struck by an enemy in combat"
+        ],
+        "tInf": "p:16796",
+        "auras": [
+            {
+                "nam": "Aggression",
+                "e": [
+                    {
+                        "id": 1560,
+                        "typ": "+",
+                        "sta": "cpo",
+                        "val": 0.1
+                    },
+                    {
+                        "id": 19,
+                        "typ": "+",
+                        "sta": "thi",
+                        "val": 0.1
+                    }
+                ]
+            },
+            {
+                "nam": "Resolute",
+                "e": [
+                    {
+                        "id": 1561,
+                        "typ": "+",
+                        "sta": "cai",
+                        "val": -0.1
+                    }
+                ]
+            }
+        ],
+        "actions": {
+            "active": [
+                {
+                    "id": 16,
+                    "nam": "Auto Attack",
+                    "typ": "aa",
+                    "ref": "aa",
+                    "desc": "A basic attack, taught to all adventurers. Damage dealt is based on your weapon damage.",
+                    "tgt": "h",
+                    "fx": "m",
+                    "damage": 1,
+                    "dsrc": "AP2",
+                    "range": 301,
+                    "mp": 0,
+                    "cd": 2000,
+                    "anim": "Attack1,Attack2",
+                    "icon": "iwd1",
+                    "auto": true,
+                    "isOK": true
+                },
+                {
+                    "id": 2191,
+                    "nam": "Decisive Strike",
+                    "typ": "p",
+                    "ref": "a1",
+                    "desc": "A powerful strike. Applies Armor Shred to your target, reducing their Damage Resistance by 10% for 5 seconds.",
+                    "tgt": "h",
+                    "fx": "m",
+                    "damage": 1.3,
+                    "dsrc": "AP2",
+                    "range": 301,
+                    "mp": 5,
+                    "cd": 2000,
+                    "anim": "Attack3",
+                    "icon": "ims2,iwaxe",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true
+                },
+                {
+                    "id": 2192,
+                    "nam": "Imbalancing Strike",
+                    "typ": "p",
+                    "ref": "a2",
+                    "desc": "A powerful and precise blow which stuns your target for 3 seconds.",
+                    "tgt": "h",
+                    "fx": "m",
+                    "damage": 2.4,
+                    "dsrc": "AP2",
+                    "range": 301,
+                    "mp": 20,
+                    "cd": 10000,
+                    "anim": "Stab",
+                    "icon": "iss1",
+                    "auras": [
+                        {}
+                    ],
+                    "isOK": true
+                },
+                {
+                    "id": 2193,
+                    "nam": "Prepared Strike",
+                    "typ": "p",
+                    "ref": "a3",
+                    "desc": "Empower your weapon, causing your next two Auto Attacks to be unavoidable critical hits. If On Guard was active at the time of application, the Auto Attacks will deal double damage. ",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "mp": 10,
+                    "cd": 12000,
+                    "anim": "Point",
+                    "icon": "imd1,iwsword",
+                    "auras": [
+                        {},
+                        {}
+                    ],
+                    "isOK": true
+                },
+                {
+                    "id": 2194,
+                    "nam": "On Guard",
+                    "typ": "p",
+                    "ref": "a4",
+                    "desc": "Take a defensive stance. Applies On Guard, increasing your Damage Resistance by 50% for 5 seconds.",
+                    "tgt": "s",
+                    "tgtMax": 1,
+                    "fx": "m",
+                    "range": 301,
+                    "mp": 15,
+                    "cd": 10000,
+                    "anim": "ShieldBlock",
+                    "icon": "iwshield",
+                    "auras": [
+                        {}
+                    ],
+                    "tgtMin": 1,
+                    "isOK": true
+                },
+                {
+                    "nam": "Potions",
+                    "ref": "i1",
+                    "desc": "Equip a potion or scroll from your inventory to use it here.",
+                    "typ": "i",
+                    "fx": "",
+                    "strl": "",
+                    "tgt": "f",
+                    "range": 808,
+                    "mp": 0,
+                    "cd": 60000,
+                    "anim": "Cheer",
+                    "icon": "icu1",
+                    "isOK": true
+                }
+            ],
+            "passive": [
+                {
+                    "id": 2189,
+                    "nam": "Aggression",
+                    "typ": "passive",
+                    "ref": "p1",
+                    "desc": "Hit Chance and outgoing physical damage increased by 10%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "isp2",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                },
+                {
+                    "id": 2190,
+                    "nam": "Resolute",
+                    "typ": "passive",
+                    "ref": "p2",
+                    "desc": "Damage Resistance increased by 10%.",
+                    "tgt": "s",
+                    "fx": "m",
+                    "range": 301,
+                    "icon": "isp2",
+                    "auras": [
+                        {}
+                    ],
+                    "cd": 60000,
+                    "isOK": true
+                }
+            ]
+        }
     }
 }
